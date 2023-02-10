@@ -1,1 +1,0 @@
-import{_ as o,o as t,c as s,w as a,V as c,a as e}from"./index-e18e8305.js";const n={name:"Home"},r=e("h1",null,"Hello, My Friends!",-1),_=e("p",null,"~Welcome to my portfolio!~",-1);function l(i,p,d,m,f,u){return t(),s(c,{class:"mt-16"},{default:a(()=>[r,_]),_:1})}const x=o(n,[["render",l]]);export{x as default};

@@ -3,13 +3,13 @@
       expand-on-hover
       rail
   >
-    <v-list>
-      <v-list-item
-          prepend-avatar="https://avatars.githubusercontent.com/u/84697205?s=400&u=1b9c8092d282c588f8c2e78eae2e8091fcc6a7b0&v=4"
-          title="Ron Hedwig"
-          subtitle="ronhedwigaquinozape@gmail.com"
-      ></v-list-item>
-    </v-list>
+<!--    <v-list>-->
+<!--      <v-list-item-->
+<!--          prepend-avatar="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg"-->
+<!--          title="Ron Hedwig"-->
+<!--          subtitle="ronhedwigaquinozape@gmail.com"-->
+<!--      ></v-list-item>-->
+<!--    </v-list>-->
 
     <v-divider></v-divider>
 

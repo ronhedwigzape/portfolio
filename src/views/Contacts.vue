@@ -1,5 +1,5 @@
 <template>
-  <v-container class="ms-13 mt-16">
+  <v-container class="ms-10 mt-16">
     <v-card
       class="pa-10 elevation-23"
     >

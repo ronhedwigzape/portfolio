@@ -6,7 +6,7 @@
   <v-card>
     <v-layout>
       <v-container>
-      <v-app-bar title="ronhedwigzape"></v-app-bar>
+      <v-app-bar title="⚡ ronhedwigzape ⚡"></v-app-bar>
 
       <v-sidebar></v-sidebar>
 

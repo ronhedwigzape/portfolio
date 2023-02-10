@@ -20,5 +20,13 @@ export default createVuetify({
     },
     theme: {
         defaultTheme: 'dark'
+    },
+    defaults: {
+        global: {
+            ripple: false,
+        },
+        VSheet: {
+            elevation: 4,
+        },
     }
 });

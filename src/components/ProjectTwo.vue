@@ -7,7 +7,8 @@
       max-width="344"
   >
     <v-img
-        src="https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/js-chat/js-chat.PNG"
+        :src="`https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/js-chat/js-chat.PNG`"
+        :lazy-src="`https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/js-chat/js-chat.PNG`"
         height="200px"
         cover
     ></v-img>

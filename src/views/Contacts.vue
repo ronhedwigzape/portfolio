@@ -13,6 +13,7 @@
           required
           @input="v$.name.$touch"
           @blur="v$.name.$touch"
+          clearable
       ></v-text-field>
 
       <v-text-field
@@ -22,6 +23,7 @@
           required
           @input="v$.email.$touch"
           @blur="v$.email.$touch"
+          clearable
       ></v-text-field>
 
       <v-textarea
@@ -32,6 +34,7 @@
           required
           @change="v$.select.$touch"
           @blur="v$.select.$touch"
+          clearable
       ></v-textarea>
 
       <v-checkbox

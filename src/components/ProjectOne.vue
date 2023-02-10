@@ -7,7 +7,8 @@
       max-width="344px"
   >
     <v-img
-        src="https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/aclc-grading-system/aclc-grading-recorder.PNG"
+        :src="`https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/aclc-grading-system/aclc-grading-recorder.PNG`"
+        :lazy-src="`https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/aclc-grading-system/aclc-grading-recorder.PNG`"
         height="200px"
         cover
     ></v-img>

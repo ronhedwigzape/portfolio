@@ -3,21 +3,20 @@
 </script>
 
 <template>
-  <v-card>
-    <v-layout>
+  <v-app>
+    <v-app-bar title="⚡ ronhedwigzape ⚡"></v-app-bar>
+    <v-card>
       <v-container>
-      <v-app-bar title="⚡ ronhedwigzape ⚡"></v-app-bar>
-
-      <v-sidebar></v-sidebar>
-
-      <router-view />
+        <router-view />
       </v-container>
-    </v-layout>
-  </v-card>
+    </v-card>
+    <v-sidebar></v-sidebar>
+  </v-app>
 </template>
 
 <script>
-
+import { onMounted } from 'vue'
+import { useDisplay } from 'vuetify'
 import SideBar from "./components/SideBar.vue";
 
 export default {
@@ -29,6 +28,13 @@ export default {
     return {
 
     }
+  },
+  setup () {
+    const { mobile } = useDisplay()
+
+    onMounted(() => {
+      console.log(mobile.value) // false
+    })
   }
 }
 </script>

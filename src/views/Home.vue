@@ -21,6 +21,11 @@
             I am today. So, sit back, relax, and get ready to discover the exciting world o
             f coding through my eyes!
           </p>
+          <v-btn-toggle class="mt-5">
+            <v-btn prepend-icon="mdi-github" href="https://github.com/ronhedwigzape" target="_blank">
+              Visit my Github
+            </v-btn>
+          </v-btn-toggle>
         </v-col>
       </v-row>
 

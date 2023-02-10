@@ -1,5 +1,5 @@
 <template>
-    <v-container class="mt-16">
+    <v-container class="ms-16 mt-16">
       <h1>Hello, My Friends!</h1>
       <p>~Welcome to my portfolio!~</p>
     </v-container>

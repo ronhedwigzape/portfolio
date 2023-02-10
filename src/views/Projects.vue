@@ -1,35 +1,40 @@
 <template>
-  <v-container class="bg-surface-variant mt-16">
-    <v-row no-gutters>
-      <v-col>
+  <v-container class="ms-16 mt-16">
+    <v-row>
 
-      </v-col>
-      <v-col>
-        <v-sheet class="pa-2 ma-2">
-          .v-col-auto
-        </v-sheet>
+      <v-col cols="4">
+        <v-project-one v-bind:show="show"></v-project-one>
       </v-col>
 
-      <v-responsive width="100%"></v-responsive>
-
-      <v-col>
-        <v-sheet class="pa-2 ma-2">
-          .v-col-auto
-        </v-sheet>
+      <v-col cols="4">
+        <v-project-two v-bind:show="show"></v-project-two>
       </v-col>
 
-      <v-col>
-        <v-sheet class="pa-2 ma-2">
-          .v-col-auto
-        </v-sheet>
+      <v-col cols="4">
+        <v-project-three v-bind:show="show"></v-project-three>
       </v-col>
+
     </v-row>
   </v-container>
 </template>
 
 <script>
+import ProjectOne from "../components/ProjectOne.vue";
+import ProjectTwo from "../components/ProjectTwo.vue";
+import ProjectThree from "../components/ProjectThree.vue";
+
 export default {
-  name: "Projects.vue"
+  name: "Projects.vue",
+  components: {
+    'v-project-one': ProjectOne,
+    'v-project-two': ProjectTwo,
+    'v-project-three': ProjectThree
+  },
+  data() {
+    return {
+      show: false,
+    }
+  }
 }
 </script>
 

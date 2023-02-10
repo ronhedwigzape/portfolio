@@ -25,5 +25,10 @@ export default {
   components: {
     'v-sidebar': SideBar
   },
+  data() {
+    return {
+
+    }
+  }
 }
 </script>

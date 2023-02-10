@@ -15,9 +15,8 @@
 
     <v-list density="compact" nav>
       <v-list-item :to="'/'" prepend-icon="mdi-home" title="Home" value="home" link></v-list-item>
-      <v-list-item :to="'/projects'" prepend-icon="mdi-folder" title="Projects" value="projects" link></v-list-item>
-      <v-list-item :to="'/skills'" prepend-icon="mdi-star" title="Skills" value="skills" link></v-list-item>
-      <v-list-item prepend-icon="mdi-email" title="Email" value="email"></v-list-item>
+      <v-list-item :to="'/projects'" prepend-icon="mdi-code-tags" title="Projects" value="projects" link></v-list-item>
+      <v-list-item :to="'/contacts'" prepend-icon="mdi-account-box" title="Contacts" value="contacts" link></v-list-item>
     </v-list>
   </v-navigation-drawer>
 

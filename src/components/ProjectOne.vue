@@ -7,7 +7,7 @@
       max-width="344px"
   >
     <v-img
-        src=""
+        src="https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/aclc-grading-system/aclc-grading-recorder.PNG"
         height="200px"
         cover
     ></v-img>
@@ -41,8 +41,11 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-        </v-card-text>
+          ACLC Grading System computes student's grade (50% Face-to-face and 50% Online) from their respective course.
+          Only (1) one course subject can do to compute grades. This website aims to help students estimate their
+          actual grade and this is just a simulator to make them aware what will their grade be like. Below is a tabular
+          data consists of student's record that had been computed 50% F-F and 50% Online of their grades.
+         </v-card-text>
       </div>
     </v-expand-transition>
   </v-card>
@@ -50,7 +53,6 @@
 </template>
 
 <script>
-import aclcGradingSystem from '../assets/img/aclc-grading-system/aclc-grading-recorder.PNG'
 
 export default {
   name: "ProjectOne",

@@ -24,20 +24,20 @@
           @blur="v$.email.$touch"
       ></v-text-field>
 
-      <v-select
+      <v-textarea
           v-model="state.select"
           :items="items"
           :error-messages="v$.select.$errors.map(e => e.$message)"
-          label="Item"
+          label="Message"
           required
           @change="v$.select.$touch"
           @blur="v$.select.$touch"
-      ></v-select>
+      ></v-textarea>
 
       <v-checkbox
           v-model="state.checkbox"
           :error-messages="v$.checkbox.$errors.map(e => e.$message)"
-          label="Do you agree?"
+          label="Are you human?"
           required
           @change="v$.checkbox.$touch"
           @blur="v$.checkbox.$touch"

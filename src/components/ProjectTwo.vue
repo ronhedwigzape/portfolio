@@ -7,17 +7,17 @@
       max-width="344"
   >
     <v-img
-        src=""
+        src="https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/js-chat/js-chat.PNG"
         height="200px"
         cover
     ></v-img>
 
     <v-card-title>
-      Top western road trips
+      Vue JS Single Page Chat
     </v-card-title>
 
     <v-card-subtitle>
-      1,000 miles of wonder
+      A pure front-end single-page chat app made with Vue 2
     </v-card-subtitle>
 
     <v-card-actions>
@@ -25,7 +25,7 @@
           color="orange-lighten-2"
           variant="text"
       >
-        Explore
+        See Details
       </v-btn>
 
       <v-spacer></v-spacer>
@@ -41,7 +41,7 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+          A pure front-end single-page chat app made with Vue 2
         </v-card-text>
       </div>
     </v-expand-transition>

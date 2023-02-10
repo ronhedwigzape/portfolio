@@ -7,17 +7,17 @@
       max-width="344px"
   >
     <v-img
-        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        src=""
         height="200px"
         cover
     ></v-img>
 
     <v-card-title>
-      Top western road trips
+      ACLC Grading Recorder
     </v-card-title>
 
     <v-card-subtitle>
-      1,000 miles of wonder
+      A system to simulate final average of students in ACLC in their respective course.
     </v-card-subtitle>
 
     <v-card-actions>
@@ -50,9 +50,16 @@
 </template>
 
 <script>
+import aclcGradingSystem from '../assets/img/aclc-grading-system/aclc-grading-recorder.PNG'
+
 export default {
   name: "ProjectOne",
-  props: ['show']
+  props: ['show'],
+  data() {
+    return {
+
+    }
+  }
 }
 </script>
 

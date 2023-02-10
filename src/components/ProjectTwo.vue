@@ -7,7 +7,7 @@
       max-width="344"
   >
     <v-img
-        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        src=""
         height="200px"
         cover
     ></v-img>

@@ -29,7 +29,7 @@
                 prepend-icon="mdi-github"
                 href="https://github.com/ronhedwigzape"
                 target="_blank"
-                class="bg-yellow-darken-2 d-flex justify-center"
+                class=""
             >
               Visit my Github
             </v-btn>
@@ -39,7 +39,7 @@
                 prepend-icon="mdi-twitter"
                 href="https://twitter.com/ronhedwigzape"
                 target="_blank"
-                class="bg-blue-darken-1"
+                class=""
             >
               Visit my Twitter
             </v-btn>
@@ -49,7 +49,7 @@
                 prepend-icon="mdi-facebook"
                 href="https://web.facebook.com/ronhedwig.zape.hogwarts.headmaster"
                 target="_blank"
-                class="bg-indigo-darken-1"
+                class=""
             >
               Visit my Facebook
             </v-btn>

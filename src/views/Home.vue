@@ -11,7 +11,7 @@
           </v-img>
         </v-col>
         <v-col xs="12" sm="12" md="12" lg="8" class="mx-auto mx-sm-auto mt-10 mt-sm-10 mt-md-10 ms-lg-10">
-          <h1 class="text-lg-h2 text-md-h2 text-sm-h3 text-h4">Hello World! I am Ron Hedwig</h1>
+          <h1 class="">Hello World! I am Ron Hedwig</h1>
           <v-divider class="my-8"></v-divider>
           <p class="mt-8" style="text-indent: 7%;">
             I'm thrilled to have the opportunity to
@@ -27,31 +27,34 @@
           <v-btn-toggle class="mt-5">
             <v-btn
                 prepend-icon="mdi-github"
+                append-icon="mdi-open-in-new"
                 href="https://github.com/ronhedwigzape"
                 target="_blank"
                 class=""
             >
-              Visit my Github
+              Github
             </v-btn>
           </v-btn-toggle>
           <v-btn-toggle class="ms-5 mt-5">
             <v-btn
                 prepend-icon="mdi-twitter"
+                append-icon="mdi-open-in-new"
                 href="https://twitter.com/ronhedwigzape"
                 target="_blank"
                 class=""
             >
-              Visit my Twitter
+              Twitter
             </v-btn>
           </v-btn-toggle>
           <v-btn-toggle class="ms-5 mt-5">
             <v-btn
                 prepend-icon="mdi-facebook"
+                append-icon="mdi-open-in-new"
                 href="https://web.facebook.com/ronhedwig.zape.hogwarts.headmaster"
                 target="_blank"
                 class=""
             >
-              Visit my Facebook
+              Facebook
             </v-btn>
           </v-btn-toggle>
         </v-col>
@@ -80,5 +83,8 @@ export default {
 
 .align-items-center {
   align-items: center;
+}
+v-btn:hover {
+  transition: 0.5s;
 }
 </style>

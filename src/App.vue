@@ -4,12 +4,10 @@
 
 <template>
   <v-app>
-    <v-app-bar title="⚡ ronhedwigzape ⚡"></v-app-bar>
-    <v-card>
+    <v-app-bar title=""><h2>⚡ ronhedwigzape ⚡</h2></v-app-bar>
       <v-container>
         <router-view />
       </v-container>
-    </v-card>
     <v-sidebar></v-sidebar>
   </v-app>
 </template>
@@ -38,3 +36,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h2 {
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+</style>

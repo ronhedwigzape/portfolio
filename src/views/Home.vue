@@ -1,6 +1,6 @@
 <template>
-  <v-row class="ms-10 ms-sm-10 ms-md-16 mt-16">
-    <v-col xs="12" sm="12" md="12" lg="3" class="">
+  <v-row class="mt-16" align-content="center" align="center">
+    <v-col xs="12" sm="12" md="12" lg="3" class="mt-16">
       <v-img
         src="https://avatars.githubusercontent.com/u/84697205?s=400&u=1b9c8092d282c588f8c2e78eae2e8091fcc6a7b0&v=4"
         class="rounded-circle elevation-23 mt-lg-16 mx-auto align-content-lg-center my-auto"

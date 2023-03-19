@@ -27,3 +27,19 @@ npm run dev
 ```sh
 npm run build
 ```
+
+<!-- 
+
+!Deploy to Github Pages!
+
+1. Delete current gh-pages branch
+
+2. npm run build
+
+3. $ git add dist -f
+
+4. $ git commit -m "My Commit Message" 
+
+5. $ git subtree push --prefix dist origin gh-pages
+
+-->

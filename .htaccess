@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /portfolio/
+
+# Exclude assets from rewrite rule
+RewriteCond %{REQUEST_URI} !\.(css|js|svg|jpg|jpeg|png|gif|woff2|ico)$ [NC]
+
+# Redirect all requests to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /portfolio/dist/index.html [L]
+
+# Exclude the public and dist directories from the rewrite rule
+RewriteCond %{REQUEST_URI} !^/portfolio/dist/
+RewriteCond %{REQUEST_URI} !^/portfolio/public/
+RewriteRule ^(.*)$ /portfolio/dist/$1 [L]

@@ -9,7 +9,7 @@
       >
       </v-img>
     </v-col>
-    <v-col xs="12" sm="12" md="12" lg="8" class="mx-auto mx-sm-auto mt-10 mt-sm-10 mt-md-10 ms-lg-10">
+    <v-col xs="12" sm="12" md="12" lg="8" class="mx-auto mx-sm-auto mt-10 mt-sm-10 mt-md-10 ms-lg-10" align="center">
       <h1 class="">Hello World! I am Ron Hedwig</h1>
       <v-divider class="my-8"></v-divider>
       <p class="mt-8" style="text-indent: 7%;">
@@ -23,7 +23,7 @@
         I am today. So, sit back, relax, and get ready to discover the exciting world o
         f coding through my eyes!
       </p>
-      <v-btn-toggle class="mt-5">
+      <v-btn-toggle class="mt-5 mx-3">
         <v-btn
             prepend-icon="mdi-github"
             append-icon="mdi-open-in-new"
@@ -34,7 +34,7 @@
           Github
         </v-btn>
       </v-btn-toggle>
-      <v-btn-toggle class="ms-5 mt-5">
+      <v-btn-toggle class="mt-5 mx-3">
         <v-btn
             prepend-icon="mdi-twitter"
             append-icon="mdi-open-in-new"
@@ -45,11 +45,11 @@
           Twitter
         </v-btn>
       </v-btn-toggle>
-      <v-btn-toggle class="ms-5 mt-5">
+      <v-btn-toggle class="mt-5 mx-3">
         <v-btn
             prepend-icon="mdi-facebook"
             append-icon="mdi-open-in-new"
-            href="https://web.facebook.com/ronhedwig.zape.hogwarts.headmaster"
+            href="https://web.facebook.com/ronhedwigzape"
             target="_blank"
             elevation="23"
         >

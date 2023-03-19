@@ -4,10 +4,12 @@
 
 <template>
   <v-app>
-    <v-app-bar title=""><h2>⚡ ronhedwigzape ⚡</h2></v-app-bar>
+    <v-app-bar class="text-center" title=""><h2 >⚡ ronhedwigzape ⚡</h2></v-app-bar>
+
       <v-container>
         <router-view />
       </v-container>
+
     <v-sidebar></v-sidebar>
   </v-app>
 </template>
@@ -39,7 +41,7 @@ export default {
 
 <style scoped>
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-left: 2rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;

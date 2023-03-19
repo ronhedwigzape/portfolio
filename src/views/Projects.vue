@@ -1,15 +1,15 @@
 <template>
   <v-row class="ms-10 ms-sm-10 ms-md-16 mt-16">
     <v-col cols="4">
-      <v-project-one v-bind:show="show"></v-project-one>
+      <v-project-one v-bind:show="show" />
     </v-col>
 
     <v-col cols="4">
-      <v-project-two v-bind:show="show"></v-project-two>
+      <v-project-two v-bind:show="show" />
     </v-col>
 
     <v-col cols="4">
-      <v-project-three v-bind:show="show"></v-project-three>
+      <v-project-three v-bind:show="show" />
     </v-col>
   </v-row>
 </template>

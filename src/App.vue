@@ -6,7 +6,7 @@
   <v-app>
     <v-app-bar app >
 		<v-app-bar-nav-icon color="white" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-		<v-toolbar-title>⚡ ronhedwigzape ⚡</v-toolbar-title>
+		<v-toolbar-title>ronhedwigzape</v-toolbar-title>
 		<v-spacer></v-spacer>
 		<v-btn color="white" icon="mdi-dots-vertical"></v-btn>
 	</v-app-bar>

@@ -124,26 +124,6 @@
       </v-col>
       <v-col xs="6" sm="4" md="2" lg="1" align="center">
         <v-img
-            :src="`https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg`"
-            :lazy-src="`https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg`"
-			width="20vw"
-        >
-          <template v-slot:placeholder>
-            <v-row
-                class="fill-height ma-0"
-                align="center"
-                justify="center"
-            >
-              <v-progress-circular
-                  indeterminate
-                  color="grey-lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-      <v-col xs="6" sm="4" md="2" lg="1" align="center">
-        <v-img
             :src="`https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg`"
             :lazy-src="`https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg`"
 			width="20vw"

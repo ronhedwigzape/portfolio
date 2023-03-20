@@ -1,6 +1,6 @@
 # portfolio
 
-My simple portfolio
+My simple portfolio (Soon going for Harry Potter themed portfolio)
 
 ## Recommended IDE Setup
 

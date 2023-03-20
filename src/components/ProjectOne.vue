@@ -4,7 +4,7 @@
       v-bind="props"
       :elevation="isHovering ? 24 : 6"
       class="mx-auto"
-      max-width="344px"
+	  max-width="600px"
   >
     <v-img
         :src="`https://raw.githubusercontent.com/ronhedwigzape/portfolio/master/src/assets/img/aclc-grading-system/aclc-grading-recorder.PNG`"
@@ -25,6 +25,9 @@
       <v-btn
           color="orange-lighten-2"
           variant="text"
+		  append-icon="mdi-open-in-new"
+		  href="#"
+		  target="_blank"
       >
         See Details
       </v-btn>

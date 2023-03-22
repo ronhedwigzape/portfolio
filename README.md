@@ -38,7 +38,7 @@ npm run build
 
 3. $ git add dist -f
 
-4. $ git commit -m "My Commit Message" 
+4. $ git commit -m "Deploy Portfolio to Github Pages" 
 
 5. $ git subtree push --prefix dist origin gh-pages
 

@@ -1,8 +1,8 @@
 <template>
   <v-row class="mt-16" align-content="center" align="center">
-    <v-col xs="12" sm="12" md="12" lg="3" class="mt-16">
+    <v-col xs="12" sm="12" md="12" lg="3" class="mt-10">
       <v-img
-        src="https://avatars.githubusercontent.com/u/84697205?s=400&u=1b9c8092d282c588f8c2e78eae2e8091fcc6a7b0&v=4"
+        src="https://avatars.githubusercontent.com/u/84697205?v=4"
         class="rounded-circle elevation-23 mt-lg-16 mx-auto align-content-lg-center my-auto"
         :height="250"
         :width="250"
@@ -20,8 +20,8 @@
         creating innovative applications, or solving complex programming challenges,
         coding is my true calling. Through this website, I aim to give you a glimpse
         into my journey and the projects that have helped shape me into the developer
-        I am today. So, sit back, relax, and get ready to discover the exciting world o
-        f coding through my eyes!
+        I am today. So, sit back, relax, and get ready to discover the exciting world of
+        coding through my eyes!
       </p>
       <v-btn-toggle class="mt-5 mx-3">
         <v-btn

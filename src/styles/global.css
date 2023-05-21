@@ -26,6 +26,13 @@ a {
   padding-right: 0 !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+  overflow-x: hidden !important;
+}
+
+.brand {
+  font-size: 4rem;
+  padding-top: 0;
+  padding-bottom: 5rem;
 }
 
 .color-primary {
@@ -52,14 +59,15 @@ a {
   max-width: 500px;
   width: 100%;
   padding: 55px;
+  margin-top: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
 .parallax-window {
   min-height: 662px;
-  background: transparent url("/src/assets/img/hogwarts-night-castle-2.png");
-  background-size: 110% 120%;
+  background: transparent url("/src/assets/img/hogwarts-night-castle-2.png") no-repeat;
+  background-size: cover;
 }
 
 .section {
@@ -68,7 +76,8 @@ a {
   align-items: center;
   max-width: 1275px;
   padding: 66px 60px;
-
+  padding-right: 0 !important;
+  overflow-x: hidden;
 }
 
 #intro {
@@ -76,15 +85,9 @@ a {
   max-width: none;
 }
 
-.brand {
-  font-size: 2.6rem;
-}
-
 .brand-box {
   box-sizing: content-box;
   width: 100%;
-  max-width: 230px;
-  min-height: 160px;
   color: white;
   text-align: center;
   margin: 70px auto 90px;
@@ -98,20 +101,16 @@ a {
   padding: 50px 55px;
 }
 
-.brand {
-  padding: 30px;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 999;
   padding-left: 70px;
   padding-right: 70px;
-  width: 400px;
-  max-width: 400px;
+  width: 300px;
+  max-width: 300px;
 }
 
 /* Hide scrollbar */
@@ -137,6 +136,8 @@ a {
   width: calc(100% - 500px);
   margin-left: auto;
   margin-right: 0;
+  padding-right: 0 !important;
+  overflow-x: hidden;
 }
 
 .main-nav > li > a {
@@ -144,7 +145,7 @@ a {
 }
 
 .main-nav {
-  margin-bottom: 160px;
+  padding-bottom: 200px;
 }
 
 .white-rect {
@@ -169,7 +170,7 @@ a {
 
 .main-nav .nav-link:hover {
   animation-name: blinker;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -193,20 +194,13 @@ a {
 .social-link {
   width: 40px;
   height: 40px;
-  color: black;
-  background-color: white;
   margin: 8px;
-  border-radius: 5px;
+  border-radius: 50%;
   padding: 0;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: #002136;
-  color: white;
 }
 
 .footer-link {
@@ -220,6 +214,7 @@ a {
 
 .section-half {
   padding: 55px;
+  overflow-x: hidden;
 }
 
 .gallery-wrap {
@@ -231,30 +226,35 @@ a {
 @media (max-width: 1600px) {
   .gallery-wrap {
     max-width: 780px;
+    margin: auto;
   }
 }
 
 @media (max-width: 1200px) {
   .gallery-wrap {
     max-width: 520px;
+    margin: auto;
   }
 }
 
 @media (max-width: 991px) {
   .gallery-wrap {
     max-width: 780px;
+    margin: auto;
   }
 }
 
 @media (max-width: 767px) {
   .gallery-wrap {
     max-width: 520px;
+    margin: auto;
   }
 }
 
 @media (max-width: 480px) {
   .gallery-wrap {
     max-width: 260px;
+    margin: auto;
   }
 }
 
@@ -416,10 +416,11 @@ figure.effects:hover p {
   transform: translate3d(0, 0, 0);
 }
 
-/* Clients */
+/* Skills */
 .section-pad {
   padding-left: 50px;
   padding-right: 50px;
+  overflow-x: hidden;
 }
 
 .images {
@@ -515,6 +516,9 @@ figure.effects:hover p {
 
   .section-wrap {
     width: 74%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    overflow-x: hidden;
   }
 
   .img-wrap a {
@@ -530,25 +534,6 @@ figure.effects:hover p {
 @media (max-width: 991px) {
   .bg-black-transparent {
     background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .brand-box {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 200px;
-    min-height: 100px;
-  }
-
-  .brand {
-    padding: 20px 30px;
-  }
-
-  .main-nav {
-    margin-bottom: 60px;
-  }
-
-  .social-links {
-    margin-bottom: 30px;
   }
 
   footer p {
@@ -591,6 +576,9 @@ figure.effects:hover p {
 
   .section-wrap {
     width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    overflow-x: hidden;
   }
 
   figure.effects h2 {
@@ -608,12 +596,18 @@ figure.effects:hover p {
 @media (max-width: 767px) {
   .section {
     padding: 30px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 554px) {
   .section {
     padding: 15px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    overflow-x: hidden;
   }
 }
 

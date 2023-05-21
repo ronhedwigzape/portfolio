@@ -1,161 +1,28 @@
 ---
+
 import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar/Sidebar.vue'
+import Intro from '../components/Intro.vue'
+import About from '../components/About.vue';
 import Projects from '../components/Projects.vue';
 import Skills from '../components/Skills.vue';
-import SocialLinks from '../components/SocialLinks.vue';
-import NavigationLinks from '../components/NavigationLinks.vue';
+import Contact from '../components/Contact.vue'
+
 ---
 
 <Layout title="ronhedwigzape">
-	<main class="container-fluid-x">
-		<div class="row">
-			<!-- TODO: Toggle Sidebar not working -->
-			<nav id="sidebar" class="bg-black-transparent sidebar">
-				<button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-					<i class="fas fa-bars"></i>
-				</button>
-				<div class="sidebar-sticky">
-					<div class="brand-box">
-						<h1 class="harry-potter-font brand text-uppercase">Hedwig's</h1>
-					</div>
-
-					<NavigationLinks client:load />
-
-					<SocialLinks client:load/>
-
-					<footer class="text-center text-white small">
-						<p class="mb-2 display-6 harry-potter-font">Potter More</p>
-						<p class="mb-0">Inspired From:
-							<a rel="nofollow" href="https://www.wizardingworld.com/" class="footer-link">Harry Potter</a>
-						</p>
-					</footer>
-				</div>
-			</nav>
-
-			<main role="main" class="ms-sm-auto col-12">
-				<div
-					class="parallax-window"
-					data-parallax="scroll"
-					data-image-src="src/assets/img/hogwarts-night-castle-2.png"
-				>
-					<div class="section-wrap">
-						<section id="intro" class="section d-flex justify-content-center">
-							<div class="bg-white-transparent intro">
-								<h1 class="display-1 mb-5 color-primary harry-potter-font harry-potter-font">Harry Potter</h1>
-								<p class="text-black">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, veritatis?
-								</p>
-								<p class="mb-0 text-black">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, atque commodi nemo nihil numquam?
-								</p>
-							</div>
-						</section>
-					</div>
-				</div>
-
-				<div class="section-wrap bg-white">
-					<section id="about" class="row section">
-						<div class="col-xl-6">
-							<div class="section-half">
-								<h2 class="display-1 color-primary mb-5 harry-potter-font harry-potter-font">About Me</h2>
-								<p class="mb-5">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, repudiandae!
-								</p>
-								<p>
-									Sed at orci non metus tristique suscipit vitae in nibh. Sed
-									rutrum odio ac est hendrerit, at vestibulum felis condimentum.
-								</p>
-							</div>
-						</div>
-						<div class="col-xl-6">
-							<div class="section-half">
-								<h2 class="display-1 color-primary mb-5 harry-potter-font harry-potter-font">Education</h2>
-								<p class="mb-5">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet debitis deserunt, explicabo harum illum non.
-								</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis explicabo quaerat quasi. Amet blanditiis consequatur cum cumque dolor iste iure iusto nesciunt omnis praesentium, quod repellat, repudiandae saepe, sequi vitae!
-								</p>
-							</div>
-						</div>
-					</section>
-				</div>
-
-				<div class="section-wrap bg-white">
-					<section id="crafts" class="row section">
-						<div class="col-12">
-							<div class="w-100 border-gray">
-								<div class="border-gray box-pad">
-									<div class="gallery-wrap">
-										<h2 class="display-1 color-primary mb-4 ml-2 harry-potter-font">My Crafts</h2>
-										<Projects client:load />
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-
-				<div class="section-wrap bg-white">
-					<section id="spells" class="row section">
-						<div class="col-12 section-pad">
-							<div class="flex-item-left">
-								<div class="w-80">
-									<h2 class="display-1 color-primary mb-4 harry-potter-font">My Spells</h2>
-									<p class="mb-5">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deleniti dolorum ex nam odio tempora? Animi atque culpa exercitationem fugiat, laboriosam non nulla numquam porro quae recusandae sunt totam voluptatem.
-									</p>
-								</div>
-
-								<Skills client:load/>
-							</div>
-						</div>
-					</section>
-				</div>
-
-				<div class="section-wrap bg-white">
-					<section id="owlme" class="row section">
-						<div class="col-xl-6 mb-5">
-							<div class="border-gray">
-								<div class="border-gray box-pad">
-									<h2 class="display-1 color-primary mb-4 harry-potter-font">Owl Me</h2>
-									<p class="mb-4">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nobis quam quasi repellendus rerum temporibus?
-									</p>
-									<p class="mb-3">
-										Lorem ipsum dolor sit amet. <br>
-										Lorem ipsum dolor sit amet. <br>
-										Lorem ipsum dolor.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 mb-5">
-							<div class="contact-form-wrap">
-								<form action="" method="POST" class="contact-form">
-									<div class="form-group">
-										<input type="text" id="contact_name" name="contact_name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Your Name" required="" />
-									</div>
-									<div class="form-group">
-										<input type="email" id="contact_email" name="contact_email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Your Email" required="" />
-									</div>
-									<div class="form-group">
-										<textarea rows="4" id="contact_message" name="contact_message" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Message..." required=""></textarea>
-									</div>
-									<div class="form-group mb-0">
-										<button type="submit" class="btn rounded-0 d-block ml-auto primary-btn">
-											SEND
-										</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</section>
-				</div>
-			</main>
-		</div>
-	</main>
-
+    <main class="container-fluid-x">
+        <div class="row">
+            <Sidebar client:visible/>
+            <main role="main" class="ps-sm-auto col-12">
+                <Intro client:load/>
+                <About client:load/>
+                <Projects client:load/>
+                <Skills client:load/>
+                <Contact client:load />
+            </main>
+        </div>
+    </main>
 </Layout>
 
 <style>

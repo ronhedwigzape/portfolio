@@ -2,13 +2,28 @@
 
 import NavbarToggler from "./NavbarToggler.vue";
 import NavigationLinks from "./NavigationLinks.vue";
-import {ref} from "vue";
+import { onMounted, ref } from "vue";
 
-const username = ref('ronhedwigzape')
+const username = ref("ronhedwigzape");
+const sidebar = ref(null);
+
+const handleSidebarChange = (event) => {
+    if (event.matches) {
+        sidebar.value.classList.add("fade-out");
+    } else {
+        sidebar.value.classList.remove("fade-out");
+    }
+};
+
+onMounted(() => {
+    const mediaQuery = window.matchMedia("(max-width: 990px)");
+    mediaQuery.addListener(handleSidebarChange);
+    handleSidebarChange(mediaQuery);
+});
 </script>
 
 <template>
-    <nav id="sidebar" class="bg-black-transparent sidebar">
+    <nav id="sidebar" class="bg-black-transparent sidebar show" ref="sidebar">
 
         <NavbarToggler/>
 
@@ -32,6 +47,15 @@ const username = ref('ronhedwigzape')
 
 <style scoped>
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -40,8 +64,8 @@ const username = ref('ronhedwigzape')
     z-index: 999;
     padding-left: 70px;
     padding-right: 70px;
-    width: 300px;
-    max-width: 300px;
+    width: 24.7rem;
+    max-width: 24.7rem;
 }
 
 /* Hide scrollbar */
@@ -73,7 +97,7 @@ const username = ref('ronhedwigzape')
 }
 
 .bg-black-transparent {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .brand-box {
@@ -84,5 +108,11 @@ const username = ref('ronhedwigzape')
     margin: 70px auto 90px;
 }
 
+.fade-out {
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
 
 </style>

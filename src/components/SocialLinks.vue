@@ -47,4 +47,20 @@ const userName = ref('ronhedwigzape');
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+.social-links {
+    margin-bottom: 27px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 50%;
+    padding: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 </style>

@@ -1,10 +1,10 @@
-# ronhedwigzape ⚡
+# <img src="public/favicon.svg" style="height: 30px; margin-right: 10px;"> ronhedwigzape 
 
 - My Official Harry-Potter Themed Portfolio. (Soon to be deployed)
 
 ## 🦉 Setup & Commands
 
-All commands are run from the root of the project, from a terminal:
+- All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 |:--------------------------|:-------------------------------------------------|

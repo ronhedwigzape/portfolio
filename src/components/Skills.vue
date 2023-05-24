@@ -32,5 +32,37 @@ const imageNumbering = ref([1, 2, 3, 4, 5, 6, 7, 8]);
 </template>
 
 <style scoped>
+.section-pad {
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow-x: hidden;
+}
+
+.images {
+    max-width: 1040px;
+}
+
+.w-80 {
+    max-width: 80%;
+}
+
+.flex-item-left {
+    align-self: flex-start;
+}
+
+.img-wrap {
+    padding: 10px;
+}
+
+.img-wrap a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 240px;
+    height: 120px;
+}
 
 </style>

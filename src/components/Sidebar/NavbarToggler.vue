@@ -10,5 +10,7 @@
 </template>
 
 <style scoped>
-
+.navbar-toggler {
+    display: none;
+}
 </style>

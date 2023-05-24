@@ -32,5 +32,9 @@ const aboutProfile = reactive([
 </template>
 
 <style scoped>
+.section-half {
+    padding: 55px;
+    overflow-x: hidden;
+}
 
 </style>

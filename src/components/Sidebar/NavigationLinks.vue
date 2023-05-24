@@ -19,4 +19,15 @@ const titles = ref(['Intro', 'About', 'Crafts', 'Spells', 'Owl Me']);
 
 <style scoped>
 
+.main-nav > li > a {
+    color: white;
+}
+
+.main-nav {
+    padding-bottom: 200px;
+}
+
+.white-rect {
+    display: block;
+}
 </style>

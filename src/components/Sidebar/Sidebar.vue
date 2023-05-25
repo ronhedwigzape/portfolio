@@ -62,10 +62,10 @@ onMounted(() => {
     bottom: 0;
     left: 0;
     z-index: 999;
-    padding-left: 70px;
-    padding-right: 70px;
-    width: 24.7rem;
-    max-width: 24.7rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 18rem;
+    max-width: 18rem;
 }
 
 /* Hide scrollbar */
@@ -79,6 +79,7 @@ onMounted(() => {
     /* WebKit */
     width: 0;
     height: 0;
+    display: none;
 }
 
 .footer-link {

@@ -66,13 +66,13 @@ a {
     padding-bottom: 12px;
 }
 
-.nav-link .white-rect {
+.nav-link .feather {
     opacity: 0;
     transition: all 0.3s ease;
 }
 
-.nav-link.current .white-rect,
-.nav-link:hover .white-rect {
+.nav-link.current .feather,
+.nav-link:hover .feather {
     opacity: 1;
 }
 

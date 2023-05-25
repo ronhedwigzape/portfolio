@@ -62,10 +62,10 @@ onMounted(() => {
     bottom: 0;
     left: 0;
     z-index: 999;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 18rem;
-    max-width: 18rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 20rem;
+    max-width: 20rem;
 }
 
 /* Hide scrollbar */
@@ -98,7 +98,7 @@ onMounted(() => {
 }
 
 .bg-black-transparent {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .brand-box {

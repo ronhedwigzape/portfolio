@@ -19,7 +19,8 @@ const imageNumbering = ref([1, 2, 3, 4, 5, 6, 7, 8]);
                         </p>
                     </div>
                     <div class="row images">
-                        <div v-for="image in imageNumbering" class="col-xl-3 col-lg-6 col-md-4 col-sm-6 img-wrap">
+                        <div v-for="image in imageNumbering"
+                             class="col-xl-4 col-lg-6 col-md-6 col-12 img-wrap d-flex justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center">
                             <a href="#">
                                 <img :src="`/src/assets/img/image-0${image}.jpg`" alt="Potter Image" class="img-fluid"/>
                             </a>

@@ -9,17 +9,23 @@ const userName = ref('ronhedwigzape');
 </script>
 
 <template>
-    <ul class="nav flex-row social-links d-flex justify-content-end pt-5 pe-5">
-        <li v-for="socialMedia in socialMedias" class="nav-item">
-            <a :href="socialMedia === 'linkedin' ? `https://www.${socialMedia}.com/in/ron-hedwig-zape-b49062269/` : `https://${socialMedia}.com/${userName}`"
-               class="nav-link social-link"
-               :id="socialMedia"
-               target="_blank"
-            >
-                <i :class="`fa-brands fa-${socialMedia}`"></i>
-            </a>
-        </li>
-    </ul>
+    <div class="pt-5">
+        <h1 class="pt-2 ps-3 ps-md-4 ps-lg-5 display-4 harry-potter-font text-white username float-start">
+            {{ userName }}
+        </h1>
+        <ul class="nav social-links pe-3 pe-md-4 pe-lg-5 float-end">
+            <li v-for="socialMedia in socialMedias" class="nav-item">
+                <a :href="socialMedia === 'linkedin' ? `https://www.${socialMedia}.com/in/ron-hedwig-zape-b49062269/` : `https://${socialMedia}.com/${userName}`"
+                   class="nav-link social-link"
+                   :id="socialMedia"
+                   target="_blank"
+                >
+                    <i :class="`fa-brands fa-${socialMedia}`"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
 </template>
 
 <style scoped>

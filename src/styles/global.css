@@ -37,6 +37,10 @@ a {
     display: none;
 }
 
+.username {
+    display: none;
+}
+
 .section {
     display: flex;
     justify-content: center;
@@ -191,6 +195,10 @@ a {
     .sidebar {
         transition: 0.5s ease;
         display: none;
+    }
+
+    .username {
+        display: block;
     }
 
     .sidebar.show .navbar-toggler {

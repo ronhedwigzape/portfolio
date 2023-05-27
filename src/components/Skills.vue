@@ -8,7 +8,7 @@ const skills = reactive([
     {
         title: 'My Spells',
         subtitle: 'Mastery of Wizardry: Unleashing Potent Skills',
-        description: 'In this section, you\'ll witness the culmination of my magical abilities in the realm of technology. From web development to data analysis, each spell in my arsenal has been meticulously crafted for innovation and enchantment. Prepare to be captivated as we push the boundaries of what\'s possible in the realm of Computer Science and embark on an extraordinary journey of wizardry.'
+        description: 'In this section, you\'ll witness the culmination of my magical abilities in the realm of technology. From web development to data analysis, each spell in my arsenal has been meticulously crafted for innovation and enchantment.'
     }
 ])
 </script>

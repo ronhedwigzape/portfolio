@@ -1,5 +1,12 @@
 <script setup lang="ts">
 
+import {reactive} from "vue";
+
+const contacts = reactive({
+    title: 'Connect with the Wizard: Bridging Worlds',
+    description: 'Transcend boundaries and bridge the gap between our worlds. Use the contact form to share inquiries, proposals, or thoughts. Together, let\'s embark on a journey of collaboration, breaking barriers and bringing innovative ideas to life. No matter your background or perspective, your valued thoughts are welcomed. Send your message through this mystical channel and let our connection unfold, exploring endless possibilities ahead.'
+})
+
 </script>
 
 <template>
@@ -8,16 +15,8 @@
             <div class="col-xl-6 mb-5">
                 <div class="border-gray">
                     <div class="border-gray box-pad">
-                        <h2 class="display-1 color-primary mb-4 harry-potter-font">Owl Me</h2>
-                        <p class="mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nobis quam quasi
-                            repellendus rerum temporibus?
-                        </p>
-                        <p class="mb-3">
-                            Lorem ipsum dolor sit amet. <br>
-                            Lorem ipsum dolor sit amet. <br>
-                            Lorem ipsum dolor.
-                        </p>
+                        <h2 class="display-1 color-primary mb-4 harry-potter-font">{{ contacts.title }}</h2>
+                        <p class="mb-4">{{ contacts.description }}</p>
                     </div>
                 </div>
             </div>

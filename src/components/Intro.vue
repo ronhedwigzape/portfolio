@@ -1,21 +1,26 @@
 <script setup lang="ts">
 
 import SocialLinks from "./SocialLinks.vue";
+import {reactive} from "vue";
+
+const introduction = reactive([
+    {
+        title: 'Unleash the Magic Within: Journey into My Digital Realm!',
+        subtitle: 'Where Technology and Imagination Converge',
+        description: 'Welcome to my enchanting world where technology and imagination intertwine. Explore my captivating portfolio, witness the fusion of creativity and logic, and experience the transformative power of my projects. Together, let\'s unlock hidden chambers of skill and create a realm where extraordinary meets reality. Embrace the magic within!'
+    }
+])
 </script>
 
 <template>
     <div class="parallax-window">
         <SocialLinks />
         <div class="section-wrap">
-            <section id="intro" class="section d-flex justify-content-center align-items-start">
-                <div class="bg-white-transparent intro">
-                    <h1 class="display-1 mb-5 color-primary harry-potter-font">Lorem ipsum.</h1>
-                    <p class="text-black">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, veritatis?
-                    </p>
-                    <p class="mb-0 text-black">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, atque commodi nemo nihil numquam?
-                    </p>
+            <section id="intro" class="section">
+                <div v-for="intro in introduction" class="bg-white-transparent intro">
+                    <h1 class="display-1 mb-5 text-white harry-potter-font title">{{ intro.title }}</h1>
+                    <h3 class="text-white subtitle-intro">{{ intro.subtitle }}</h3>
+                    <p class="mb-0 text-white p">{{ intro.description }}</p>
                 </div>
             </section>
         </div>
@@ -28,20 +33,34 @@ import SocialLinks from "./SocialLinks.vue";
     min-height: 662px;
     background: transparent url("/src/assets/img/hogwarts-night-castle-2.png") no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .intro {
-    max-width: 500px;
-    width: 100%;
-    padding: 55px;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
+    position: absolute;
+    max-width: 1500px;
+    width: 80%;
+    padding: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #intro {
     min-height: 100vh;
     max-width: none;
+}
+
+.title {
+    text-shadow: 3px 3px 5px #1a1d20;
+}
+
+.subtitle-intro {
+    text-shadow: 1px 1px 3px #1a1d20;
+}
+
+.p {
+    text-shadow: 1px 1px 2px #1a1d20;
 }
 
 .bg-white-transparent {
@@ -56,5 +75,12 @@ import SocialLinks from "./SocialLinks.vue";
     color: black;
 }
 
+@media (min-width: 991px) {
+    .intro {
+        top: 55%;
+        width: 63%;
+        left: 64.5%;
+    }
+}
 
 </style>

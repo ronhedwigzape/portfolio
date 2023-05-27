@@ -1,8 +1,16 @@
 <script setup lang="ts">
 
-import {ref} from "vue";
+import {reactive, ref} from "vue";
 
 const imageNumbering = ref([1, 2, 3, 4, 5, 6, 7, 8]);
+
+const skills = reactive([
+    {
+        title: 'My Spells',
+        subtitle: 'Mastery of Wizardry: Unleashing Potent Skills',
+        description: 'In this section, you\'ll witness the culmination of my magical abilities in the realm of technology. From web development to data analysis, each spell in my arsenal has been meticulously crafted for innovation and enchantment. Prepare to be captivated as we push the boundaries of what\'s possible in the realm of Computer Science and embark on an extraordinary journey of wizardry.'
+    }
+])
 </script>
 
 <template>
@@ -10,13 +18,10 @@ const imageNumbering = ref([1, 2, 3, 4, 5, 6, 7, 8]);
         <section id="spells" class="row section">
             <div class="col-12 section-pad">
                 <div class="flex-item-left">
-                    <div class="w-80">
-                        <h2 class="display-1 color-primary mb-4 harry-potter-font">My Spells</h2>
-                        <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deleniti dolorum ex
-                            nam odio tempora? Animi atque culpa exercitationem fugiat, laboriosam non nulla numquam
-                            porro quae recusandae sunt totam voluptatem.
-                        </p>
+                    <div v-for="skill in skills" class="w-80">
+                        <h2 class="display-1 color-primary mb-4 harry-potter-font">{{ skill.title }}</h2>
+                        <h4 class="display-5 subtitle harry-potter-font mb-3">{{ skill.subtitle }}</h4>
+                        <p class="mb-5">{{ skill.description }}</p>
                     </div>
                     <div class="row images">
                         <div v-for="image in imageNumbering"

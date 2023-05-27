@@ -33,6 +33,10 @@ a {
     color: #002136;
 }
 
+.subtitle {
+    color: #628a9d !important;
+}
+
 .navbar-toggler {
     display: none;
 }

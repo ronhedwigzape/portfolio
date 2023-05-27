@@ -3,6 +3,10 @@ import {ref} from "vue";
 
 const numbers = ref([1, 2, 3, 4, 5])
 
+const title = ref('My Crafts');
+const subtitle = ref('The Chamber of Projects: Unveiling Magical Creations')
+const description = ref('Step into the enchanted realm of my projects, where innovation and magic converge to empower ACLC College of Iriga. Witness the transformation of technology through my contributions to the school\'s tabulation system and the remarkable advancements within the ACLC College of Iriga GitHub organization. Prepare to be amazed as we push the boundaries of what\'s possible, streamlining processes and enhancing the academic experience. Join me on this journey of technological marvels and discover the powerful impact of innovation in education.')
+
 </script>
 
 <template>
@@ -12,7 +16,9 @@ const numbers = ref([1, 2, 3, 4, 5])
                 <div class="w-100">
                     <div class="box-pad">
                         <div class="project-wrap">
-                            <h2 class="display-1 color-primary mb-4 ml-2 harry-potter-font">My Crafts</h2>
+                            <h2 class="display-1 color-primary mb-4 ml-2 harry-potter-font">{{ title }}</h2>
+                            <h4 class="display-5 subtitle harry-potter-font mb-3">{{ subtitle }}</h4>
+                            <p class="mb-5">{{ description }}</p>
                             <div v-for="(number, numberIndex) in numbers" class="project-item">
                                 <figure class="effects">
                                     <img :src="`/src/assets/img/gallery/0${number}.jpg`" alt="My Project Image"

@@ -1,15 +1,10 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import TopBar from "./components/navbars/TopBar.vue";
-import ToggleDarkModeSwitch from "./components/buttons/ToggleDarkModeSwitch.vue";
 
 </script>
 
 <template>
     <v-app>
-        <TopBar/>
-        <ToggleDarkModeSwitch/>
-        <RouterView/>
+        <router-view/>
     </v-app>
 <h1>hello</h1>
 </template>

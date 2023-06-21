@@ -7,7 +7,7 @@ export const useStore = defineStore('store', {
             app: {
                 backendDir: 'app',
                 title: 'CodeWizard',
-                brand: 'ronhedwigzape'
+                brand: 'ronhedwigzape',
             }
         }
     },

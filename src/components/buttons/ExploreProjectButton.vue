@@ -1,10 +1,17 @@
 <script setup>
 
+import {useUiStore} from "../../stores/store-ui";
+
+const ui = useUiStore();
 </script>
 
 <template>
     <v-btn
         class="nuxt-button mt-4 mt-sm-8"
+        :class="{
+            'nuxt-dark': ui.getTheme === 'dark',
+            'text-grey-darken-3': ui.getTheme === 'light'
+        }"
         prepend-icon="mdi-open-in-new"
         :ripple="false"
         :height="$vuetify.display.lgAndUp ? 60 : 50"
@@ -25,10 +32,13 @@
 .nuxt-button:hover {
     border-color: #00fa95;
     box-shadow: 0 0 20px rgba(1, 220, 131, 0.8);
-    background-color: black !important;
 }
 
 .nuxt-button:active {
     box-shadow: 0 0 10px rgba(1, 220, 131, 0.4);
+}
+
+.nuxt-dark:hover {
+    background-color: black !important;
 }
 </style>

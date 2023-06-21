@@ -1,14 +1,15 @@
 <template>
     <v-app-bar
         scroll-behavior="hide"
-        class="bg-black"
+        class="bg-black border-b"
         height="60"
         flat
     >
         <template v-slot:prepend>
             <v-icon class="ms-3">mdi-owl</v-icon>
+            <v-app-bar-title class="ms-3">{{ store.app.brand }}</v-app-bar-title>
         </template>
-        <v-app-bar-title class="font-weight-bold">{{ store.app.brand }}</v-app-bar-title>
+
 
         <template v-slot:append>
             <navigation-buttons v-if="$vuetify.display.lgAndUp"/>

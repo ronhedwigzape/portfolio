@@ -8,6 +8,11 @@ export const useUiStore = defineStore('ui',{
         darkMode: true,
         theme: useTheme()
     }),
+    getters: {
+      getTheme() {
+          return this.theme.global.name
+      }
+    },
     actions: {
         toggleSidebar() {
             this.sidebar = !this.sidebar;

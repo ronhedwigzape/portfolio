@@ -1,19 +1,12 @@
 @font-face {
-    font-family: 'Inter';
-    src: local('Inter-Regular'), url('/fonts/Inter-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Potter';
-    src: local('Inter-Regular'), url('/fonts/HarryPotter.ttf') format('truetype');
+    src: local('HarryPotter'), url('/fonts/HarryPotter.ttf') format('truetype');
 }
 
 .potter {
     font-family: Potter, serif !important;
 }
 
-
-
-body {
-    font-family: 'Inter', sans-serif !important;
+.text-shadow {
+    text-shadow: #000000 3px 3px 5px;
 }

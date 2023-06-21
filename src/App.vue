@@ -1,12 +1,13 @@
 <script setup>
 
+import TopBar from "./components/navbars/TopBar.vue";
 </script>
 
 <template>
     <v-app>
+        <TopBar/>
         <router-view/>
     </v-app>
-<h1>hello</h1>
 </template>
 
 <style scoped>

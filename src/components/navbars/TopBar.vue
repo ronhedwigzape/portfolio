@@ -11,6 +11,7 @@
         <v-app-bar-title class="font-weight-bold">{{ store.app.brand }}</v-app-bar-title>
 
         <template v-slot:append>
+            <navigation-buttons v-if="$vuetify.display.lgAndUp"/>
             <v-app-bar-nav-icon v-if="$vuetify.display.mdAndDown" @click.stop="ui.sidebar = !ui.sidebar" />
         </template>
     </v-app-bar>
@@ -18,11 +19,12 @@
 <script setup>
 import {useStore} from "../../stores";
 import {useUiStore} from "../../stores/store-ui";
+import NavigationButtons from "../buttons/NavigationButtons.vue";
 
 const store = useStore();
 const ui = useUiStore();
 
-ui.init()
+ui.init();
 </script>
 
 

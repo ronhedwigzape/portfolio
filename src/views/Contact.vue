@@ -1,5 +1,4 @@
 <script setup>
-
 import HogwartsContactParallax from "../components/parallax/HogwartsContactParallax.vue";
 </script>
 

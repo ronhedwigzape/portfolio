@@ -13,8 +13,8 @@ const ui = useUiStore();
         }"
         prepend-icon="mdi-open-in-new"
         :ripple="false"
-        :height="$vuetify.display.lgAndUp ? 60 : 50"
-        :width="$vuetify.display.lgAndUp ? 280 : 250"
+        :height="$vuetify.display.lgAndUp ? 60 : 55"
+        :width="$vuetify.display.lgAndUp ? 280 : 260"
     >
         Explore my Projects
     </v-btn>

@@ -1,19 +1,3 @@
-<script setup>
-import {useUiStore} from "../../stores/store-ui";
-import {useProfileStore} from "../../stores/store-profile";
-import {useHomeStore} from "../../stores/store-home";
-import {useProjectStore} from "../../stores/store-projects";
-import {useContactStore} from "../../stores/store-contact";
-import SocialButtons from "../buttons/SocialButtons.vue";
-import ToggleDarkModeSwitch from "../buttons/ToggleDarkModeSwitch.vue";
-
-const ui = useUiStore();
-const profile = useProfileStore();
-const home = useHomeStore();
-const project = useProjectStore();
-const contact = useContactStore();
-</script>
-
 <template>
     <v-navigation-drawer
         temporary
@@ -30,6 +14,21 @@ const contact = useContactStore();
         </template>
     </v-navigation-drawer>
 </template>
+
+<script setup>
+import {useUiStore} from "../../stores/store-ui";
+import {useProfileStore} from "../../stores/store-profile";
+import {useHomeStore} from "../../stores/store-home";
+import {useProjectStore} from "../../stores/store-projects";
+import {useContactStore} from "../../stores/store-contact";
+import SocialButtons from "../buttons/SocialButtons.vue";
+
+const ui = useUiStore();
+const profile = useProfileStore();
+const home = useHomeStore();
+const project = useProjectStore();
+const contact = useContactStore();
+</script>
 
 <style scoped>
 

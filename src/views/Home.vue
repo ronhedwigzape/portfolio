@@ -10,8 +10,11 @@ const home = useHomeStore();
     <v-main>
         <HogwartsHomeParallax/>
         <v-container>
-            <h3>{{ home.content.title }}</h3>
-            <p>{{ }}</p>
+            <h2 class="my-3">{{ home.content.title }}</h2>
+            <p class="my-2" v-for="description in home.content.description">{{ description }}</p>
+            <v-col class="text-center">
+                <v-btn>Get in Touch</v-btn>
+            </v-col>
         </v-container>
     </v-main>
 </template>

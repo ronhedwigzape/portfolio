@@ -11,14 +11,36 @@ const home = useHomeStore();
             <h1 class="text-h3 mb-4 text-shadow potter text-center">
                 {{ home.header.title }}
             </h1>
-            <h5 class="text-shadow text-center">
+            <p class="text-shadow text-subtitle-2 text-center">
                 {{ home.header.subtitle }}
-            </h5>
+            </p>
+            <v-btn
+                class="nuxt-button mt-4"
+                :ripple="false"
+            >
+                Explore my Projects
+            </v-btn>
         </v-container>
 
     </v-parallax>
 </template>
 
 <style scoped>
+.nuxt-button {
+    border: 3px solid #01dc83;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
 
+.nuxt-button:hover {
+    border-color: #00fa95;
+    box-shadow: 0 0 20px rgba(1, 220, 131, 0.8);
+    background-color: black !important;
+}
+
+.nuxt-button:active {
+    box-shadow: 0 0 10px rgba(1, 220, 131, 0.4);
+}
 </style>

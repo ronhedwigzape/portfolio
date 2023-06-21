@@ -1,5 +1,4 @@
 <script setup>
-import TopBar from "../components/navbars/TopBar.vue";
 import HogwartsHomeParallax from "../components/parallax/HogwartsHomeParallax.vue";
 import {useHomeStore} from "../stores/store-home";
 import GetInTouchButton from "../components/buttons/GetInTouchButton.vue";

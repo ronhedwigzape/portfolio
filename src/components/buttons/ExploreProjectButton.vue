@@ -1,5 +1,4 @@
 <script setup>
-
 import {useUiStore} from "../../stores/store-ui";
 
 const ui = useUiStore();
@@ -7,7 +6,7 @@ const ui = useUiStore();
 
 <template>
     <v-btn
-        class="nuxt-button mt-4 mt-sm-8"
+        class="nuxt-button-lead mt-4 mt-sm-8"
         :class="{
             'nuxt-dark': ui.getTheme === 'dark',
             'text-grey-darken-3': ui.getTheme === 'light'
@@ -22,23 +21,5 @@ const ui = useUiStore();
 </template>
 
 <style scoped>
-.nuxt-button {
-    border: 3px solid #01dc83;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-}
 
-.nuxt-button:hover {
-    border-color: #00fa95;
-    box-shadow: 0 0 20px rgba(1, 220, 131, 0.8);
-}
-
-.nuxt-button:active {
-    box-shadow: 0 0 10px rgba(1, 220, 131, 0.4);
-}
-
-.nuxt-dark:hover {
-    background-color: black !important;
-}
 </style>

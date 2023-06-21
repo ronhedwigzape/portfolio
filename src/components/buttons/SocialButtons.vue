@@ -1,6 +1,7 @@
 <script setup>
 import {useProfileStore} from "../../stores/store-profile";
 import {ref} from "vue";
+import ToggleDarkModeSwitch from "./ToggleDarkModeSwitch.vue";
 
 const profile = useProfileStore();
 const toggle = ref(null);
@@ -8,6 +9,11 @@ const toggle = ref(null);
 
 <template>
     <div class="d-flex align-center flex-column pa-6">
+        <div class="d-flex justify-space-between align-center" style="gap: 2rem;">
+            <p>Appearance</p>
+            <toggle-dark-mode-switch/>
+        </div>
+
         <v-btn-toggle
             v-model="toggle"
             :mandatory="false"

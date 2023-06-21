@@ -2,6 +2,7 @@ import { defineStore } from 'pinia';
 
 export const useProfileStore = defineStore('profile', {
     state: () => ({
+        component: 'Profile',
         name: 'Ron Hedwig',
         initial: 'A.',
         surname: 'Zape',

@@ -1,27 +1,22 @@
 <script setup>
+import {useUiStore} from "../../stores/store-ui";
 
+const ui = useUiStore();
 </script>
 
 <template>
-    <v-btn :to="'/'" class="mt-3 nuxt-button">Return to Home</v-btn>
+    <v-btn
+        :to="'/'"
+        class="mt-3 nuxt-button-sub"
+        :class="{
+            'nuxt-dark': ui.getTheme === 'dark',
+            'text-grey-darken-3': ui.getTheme === 'light'
+        }"
+    >
+        Return to Home
+    </v-btn>
 </template>
 
 <style scoped>
-.nuxt-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
 
-.nuxt-button:hover {
-    border-color: #00fa95;
-}
-
-.nuxt-button:focus,
-.nuxt-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
 </style>

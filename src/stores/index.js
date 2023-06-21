@@ -4,6 +4,7 @@ export const useStore = defineStore('store', {
 
     state:() => {
         return {
+            component: 'App',
             app: {
                 backendDir: 'app',
                 title: 'CodeWizard',

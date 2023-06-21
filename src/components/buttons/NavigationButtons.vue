@@ -1,8 +1,14 @@
 <script setup>
 import ToggleDarkModeSwitch from "./ToggleDarkModeSwitch.vue";
 import {useProfileStore} from "../../stores/store-profile";
+import {useHomeStore} from "../../stores/store-home";
+import {useProjectStore} from "../../stores/store-projects";
+import {useContactStore} from "../../stores/store-contact";
 
 const profile = useProfileStore();
+const home = useHomeStore();
+const project = useProjectStore();
+const contact = useContactStore();
 </script>
 
 <template>
@@ -12,7 +18,7 @@ const profile = useProfileStore();
         :ripple="false"
         stacked
         :to="'/'">
-        Home
+        {{ home.component }}
     </v-btn>
     <v-btn
         class="button bl"
@@ -20,14 +26,14 @@ const profile = useProfileStore();
         :ripple="false"
         stacked
         :to="'/projects'">
-        Projects
+        {{ project.component }}
     </v-btn>
     <v-btn
         class="button br bl"
         :ripple="false"
         stacked
         :to="'/contact'">
-        Contact
+        {{ contact.component }}
     </v-btn>
     <v-btn
         stacked

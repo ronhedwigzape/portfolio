@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import Projects from '../views/Projects.vue';
 import Contact from '../views/Contact.vue';
-import NotFound from '../views/NotFound.vue';
+import PageNotFound from '../views/PageNotFound.vue';
 
 const routes = [
   {
@@ -21,7 +21,7 @@ const routes = [
     component: Contact,
   },
   // Catch-all route for non-existing paths:
-  { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound },
+  { path: '/:pathMatch(.*)*', name: 'not-found', component: PageNotFound },
 ];
 
 const router = createRouter({

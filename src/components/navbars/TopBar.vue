@@ -10,7 +10,6 @@
             <v-app-bar-title class="ms-3">{{ store.app.brand }}</v-app-bar-title>
         </template>
 
-
         <template v-slot:append>
             <navigation-buttons v-if="$vuetify.display.lgAndUp"/>
             <v-app-bar-nav-icon v-if="$vuetify.display.mdAndDown" @click.stop="ui.sidebar = !ui.sidebar" />
@@ -27,7 +26,6 @@ const ui = useUiStore();
 
 ui.init();
 </script>
-
 
 <style scoped>
 

@@ -15,7 +15,7 @@ export const useProfileStore = defineStore('profile', {
             linkedin: 'https://www.linkedin.com/in/ron-hedwig-zape-b49062269/'
         },
         // GitHub Personal Token
-        github_personal_token: '',
+        github_personal_token:  import.meta.env.VITE_GITHUB_PERSONAL_TOKEN,
         repositories: []
     }),
 
@@ -30,9 +30,20 @@ export const useProfileStore = defineStore('profile', {
 
             const response = await axios.get(`https://api.github.com/users/${username}/repos`, {
                 headers: {
-                    'Authorization': `token ${token}`
+                    'Authorization': `${token}`
                 }
             });
+
+            console.log(response)
+
+            // See rate limit
+            // const rateLimitResponse = await axios.get("https://api.github.com/rate_limit", {
+            //     headers: {
+            //         "Authorization": `${token}`
+            //     }
+            // });
+            //
+            // console.log(rateLimitResponse.data);
 
             // Add the repository names to display
             const repoNames = ['seat-n-savor', 'sportsfest-litmusda', 'notes'];

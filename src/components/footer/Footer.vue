@@ -1,6 +1,6 @@
 <script setup>
 
-import {useStore} from "../../stores";
+import {useStore} from "@/stores";
 
 const store = useStore()
 </script>

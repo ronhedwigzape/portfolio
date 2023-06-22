@@ -16,11 +16,11 @@
 </template>
 
 <script setup>
-import {useUiStore} from "../../stores/store-ui";
-import {useProfileStore} from "../../stores/store-profile";
-import {useHomeStore} from "../../stores/store-home";
-import {useProjectStore} from "../../stores/store-projects";
-import {useContactStore} from "../../stores/store-contact";
+import {useUiStore} from "@/stores/store-ui";
+import {useProfileStore} from "@/stores/store-profile";
+import {useHomeStore} from "@/stores/store-home";
+import {useProjectStore} from "@/stores/store-projects";
+import {useContactStore} from "@/stores/store-contact";
 import SocialButtons from "../buttons/SocialButtons.vue";
 
 const ui = useUiStore();

@@ -8,7 +8,7 @@ export const useHomeStore = defineStore('home', {
             subtitle: 'Turning code into spells, one line at a time',
             action: 'Explore My Projects',
             parallax: {
-                location: '/images/journey.jpg'
+                location: './images/journey.jpg'
             }
         },
         content: {

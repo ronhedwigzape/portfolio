@@ -4,11 +4,10 @@ export const useContactStore = defineStore('contact', {
     state: () => ({
         component: 'Owl',
         header: {
-            title: 'Owl me',
-            subtitle: 'lorem',
-            action: 'Explore My Projects',
+            title: 'Contact Me',
+            subtitle: 'Send me an owl or use the magical form below',
             parallax: {
-                location: '/images/message.jpg'
+                location: './images/message.jpg'
             }
         },
         content: {

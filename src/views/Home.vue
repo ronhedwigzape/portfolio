@@ -1,6 +1,6 @@
 <script setup>
 import HogwartsHomeParallax from "../components/parallax/HogwartsHomeParallax.vue";
-import {useHomeStore} from "../stores/store-home";
+import {useHomeStore} from "@/stores/store-home";
 import GetInTouchButton from "../components/buttons/GetInTouchButton.vue";
 
 const home = useHomeStore();

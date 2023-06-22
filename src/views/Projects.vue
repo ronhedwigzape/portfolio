@@ -1,6 +1,7 @@
 <script setup>
 import HogwartsProjectParallax from "../components/parallax/HogwartsProjectParallax.vue";
 import {useProjectStore} from "../stores/store-projects";
+import RepositoryCard from "../components/cards/RepositoryCard.vue";
 
 const project = useProjectStore();
 </script>
@@ -16,6 +17,7 @@ const project = useProjectStore();
                v-for="description in project.content.description">
                 {{ description }}
             </p>
+            <repository-card/>
         </v-container>
     </v-main>
 </template>

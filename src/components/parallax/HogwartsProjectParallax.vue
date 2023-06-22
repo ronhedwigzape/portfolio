@@ -1,5 +1,5 @@
 <script setup>
-import {useProjectStore} from "../../stores/store-projects";
+import {useProjectStore} from "@/stores/store-projects";
 
 const project = useProjectStore();
 </script>

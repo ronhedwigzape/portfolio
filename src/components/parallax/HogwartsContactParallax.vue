@@ -1,5 +1,5 @@
 <script setup>
-import {useContactStore} from "../../stores/store-contact";
+import {useContactStore} from "@/stores/store-contact";
 
 const contact = useContactStore();
 </script>

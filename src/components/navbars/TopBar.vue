@@ -15,8 +15,8 @@
     </v-app-bar>
 </template>
 <script setup>
-import {useStore} from "../../stores";
-import {useUiStore} from "../../stores/store-ui";
+import {useStore} from "@/stores";
+import {useUiStore} from "@/stores/store-ui";
 import NavigationButtons from "../buttons/NavigationButtons.vue";
 
 const store = useStore();

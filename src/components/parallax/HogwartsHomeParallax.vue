@@ -1,5 +1,5 @@
 <script setup>
-import {useHomeStore} from "../../stores/store-home";
+import {useHomeStore} from "@/stores/store-home";
 import ExploreProjectButton from "../buttons/ExploreProjectButton.vue";
 
 const home = useHomeStore();

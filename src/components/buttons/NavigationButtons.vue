@@ -1,9 +1,9 @@
 <script setup>
 import ToggleDarkModeSwitch from "./ToggleDarkModeSwitch.vue";
-import {useProfileStore} from "../../stores/store-profile";
-import {useHomeStore} from "../../stores/store-home";
-import {useProjectStore} from "../../stores/store-projects";
-import {useContactStore} from "../../stores/store-contact";
+import {useProfileStore} from "@/stores/store-profile";
+import {useHomeStore} from "@/stores/store-home";
+import {useProjectStore} from "@/stores/store-projects";
+import {useContactStore} from "@/stores/store-contact";
 
 const profile = useProfileStore();
 const home = useHomeStore();

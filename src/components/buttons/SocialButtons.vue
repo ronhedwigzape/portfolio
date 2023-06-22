@@ -1,5 +1,5 @@
 <script setup>
-import {useProfileStore} from "../../stores/store-profile";
+import {useProfileStore} from "@/stores/store-profile";
 import {ref} from "vue";
 import ToggleDarkModeSwitch from "./ToggleDarkModeSwitch.vue";
 

@@ -1,7 +1,9 @@
 <script setup>
 import {useUiStore} from "@/stores/store-ui";
+import {useProjectStore} from "@/stores/store-projects";
 
 const ui = useUiStore();
+const project = useProjectStore();
 </script>
 
 <template>
@@ -15,6 +17,7 @@ const ui = useUiStore();
         :ripple="false"
         :height="$vuetify.display.lgAndUp ? 60 : 55"
         :width="$vuetify.display.lgAndUp ? 280 : 260"
+        :to="`/${project.slug}`"
     >
         Explore my Projects
     </v-btn>

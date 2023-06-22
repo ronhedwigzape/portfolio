@@ -17,7 +17,7 @@ const contact = useContactStore();
         :exact="true"
         :ripple="false"
         stacked
-        :to="'/'">
+        :to="`/${home.slug}`">
         {{ home.component }}
     </v-btn>
     <v-btn
@@ -25,14 +25,14 @@ const contact = useContactStore();
         :exact="true"
         :ripple="false"
         stacked
-        :to="'/projects'">
+        :to="`/${project.slug}`">
         {{ project.component }}
     </v-btn>
     <v-btn
         class="button br bl"
         :ripple="false"
         stacked
-        :to="'/contact'">
+        :to="`/${contact.slug}`">
         {{ contact.component }}
     </v-btn>
     <v-btn

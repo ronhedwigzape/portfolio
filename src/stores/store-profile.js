@@ -14,7 +14,8 @@ export const useProfileStore = defineStore('profile', {
             twitter: 'https://twitter.com/ronhedwigzape',
             linkedin: 'https://www.linkedin.com/in/ron-hedwig-zape-b49062269/'
         },
-        github_personal_token: null,
+        // GitHub Personal Token
+        github_personal_token: '',
         repositories: []
     }),
 
@@ -23,9 +24,6 @@ export const useProfileStore = defineStore('profile', {
     },
 
     actions: {
-        setGithubPersonalToken(token) {
-            this.github_personal_token = token;
-        },
         async fetchRepositories() {
             const username = this.username;
             const token = this.github_personal_token;
@@ -37,7 +35,7 @@ export const useProfileStore = defineStore('profile', {
             });
 
             // Add the repository names to display
-            const repoNames = ['seat-n-savor', 'sportsfest-litmusda'];
+            const repoNames = ['seat-n-savor', 'sportsfest-litmusda', 'notes'];
 
             // Filter the repositories array base on repoNames
             const filteredRepos = response.data.filter(repo => repoNames.includes(repo.name));

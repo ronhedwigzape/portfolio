@@ -5,9 +5,24 @@
         v-if="$vuetify.display.mdAndDown"
     >
         <v-list density="compact" nav>
-            <v-list-item :to="'/'" prepend-icon="mdi-view-dashboard" :title="home.component" value="home"></v-list-item>
-            <v-list-item :to="'/projects'" prepend-icon="mdi-briefcase" :title="project.component" value="projects"></v-list-item>
-            <v-list-item :to="'/contact'" prepend-icon="mdi-account" :title="contact.component" value="contact" ></v-list-item>
+            <v-list-item
+                :to="`/${home.slug}`"
+                prepend-icon="mdi-view-dashboard"
+                :title="home.component"
+                :value="`${home.slug}`"
+            />
+            <v-list-item
+                :to="`/${project.slug}`"
+                prepend-icon="mdi-briefcase"
+                :title="project.component"
+                :value="`${project.slug}`"
+            />
+            <v-list-item
+                :to="`/${contact.slug}`"
+                prepend-icon="mdi-account"
+                :title="contact.component"
+                :value="`${contact.slug}`"
+            />
         </v-list>
         <template v-slot:append>
            <social-buttons/>

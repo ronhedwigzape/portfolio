@@ -14,6 +14,9 @@ profile.fetchRepositories();
                 <div class="content d-flex flex-column align-start">
                     <p class="heading">{{ repo.name }}</p>
                     <p class="para">{{ repo.description }}</p>
+                    <v-row>
+
+                    </v-row>
                 </div>
             </v-card>
         </v-col>

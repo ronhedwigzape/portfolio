@@ -3,6 +3,7 @@ import { defineStore } from 'pinia';
 export const useHomeStore = defineStore('home', {
     state: () => ({
         component: 'Home',
+        slug: '',
         header: {
             title: 'Welcome to Ron Hedwig\'s Magical World of Software Engineering',
             subtitle: 'Turning code into spells, one line at a time',

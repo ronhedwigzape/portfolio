@@ -1,45 +1,14 @@
-# portfolio
+# <img src="assets/favicon.svg" style="height: 30px; margin-right: 10px;"> ronhedwigzape 
 
-My simple portfolio (Soon going for Harry Potter themed portfolio ~ See [`dev-hp-vue3`](https://github.com/ronhedwigzape/portfolio/tree/dev-hp-vue3)) 
+- My Official Harry-Potter Themed Portfolio. (Soon to be deployed)
 
-## Recommended IDE Setup
+## 🦉 Setup & Commands
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- All commands are run from the root of the project, from a terminal:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-<!-- 
-
-!Deploy to Github Pages!
-
-1. Delete current gh-pages branch
-
-2. npm run build
-
-3. $ git add dist -f
-
-4. $ git commit -m "Deploy Portfolio to Github Pages" 
-
-5. $ git subtree push --prefix dist origin gh-pages
-
--->
+| Command                   | Action                                       |
+|:--------------------------|:---------------------------------------------|
+| `npm install`             | Installs dependencies                        |
+| `npm run dev`             | Starts local dev server at `localhost:1000`  |
+| `npm run build`           | Build your production site to `./public/`    |
+| `npm run preview`         | Preview your build locally, before deploying |

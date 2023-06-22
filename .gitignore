@@ -13,7 +13,12 @@ dist
 dist-ssr
 coverage
 *.local
-
+.env
+public
+app/index.php
+app/_test.php
+app/_env.php
+app/config/config.php
 /cypress/videos/
 /cypress/screenshots/
 
@@ -26,3 +31,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Backend
+vendor

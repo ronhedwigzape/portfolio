@@ -20,7 +20,7 @@ const contact = useContactStore();
                     </p>
                 </v-col>
                 <v-col cols="12" sm="6" md="6" lg="6">
-                    <v-card class="mt-lg-3">
+                    <v-card class="mt-lg-3" variant="tonal">
                         <v-card-title class="my-3 my-md-6 my-lg-6 text-h5 text-sm-h5 text-md-h4 text-lg-h4 px-6">
                             {{ contact.content.card_title }}
                             <v-icon>mdi-owl</v-icon>

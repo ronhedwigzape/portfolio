@@ -1,6 +1,10 @@
 <template>
     <v-app-bar
-        class="bg-black border-b"
+        class="border-b"
+        :class="{
+            'bg-black': ui.getTheme === 'dark',
+            'bg-white': ui.getTheme === 'light'
+        }"
         height="60"
         flat
     >

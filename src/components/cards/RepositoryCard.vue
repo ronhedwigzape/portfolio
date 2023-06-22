@@ -10,7 +10,7 @@ profile.fetchRepositories();
 </script>
 
 <template>
-    <v-row class="d-flex justify-center align-center my-6">
+    <v-row v-if="profile.repositories" class="d-flex justify-center align-center my-6">
         <v-col cols="12" sm="6" md="6" lg="6" v-for="repo in profile.repositories" :key="repo.id">
             <v-card
                 class="card pa-7 d-flex align-center"
@@ -130,6 +130,12 @@ profile.fetchRepositories();
                 </v-row>
             </v-card>
         </v-col>
+    </v-row>
+    <v-row v-else>
+        <v-progress-linear
+            indeterminate
+            color="green-accent-3"
+        ></v-progress-linear>
     </v-row>
 </template>
 

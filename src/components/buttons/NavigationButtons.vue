@@ -4,16 +4,22 @@ import {useProfileStore} from "@/stores/store-profile";
 import {useHomeStore} from "@/stores/store-home";
 import {useProjectStore} from "@/stores/store-projects";
 import {useContactStore} from "@/stores/store-contact";
+import {useUiStore} from "@/stores/store-ui";
 
 const profile = useProfileStore();
 const home = useHomeStore();
 const project = useProjectStore();
 const contact = useContactStore();
+const ui = useUiStore();
 </script>
 
 <template>
     <v-btn
         class="button bl"
+        :class="{
+            'button-dark': ui.getTheme === 'dark',
+            'button-light': ui.getTheme === 'light'
+        }"
         :exact="true"
         :ripple="false"
         stacked
@@ -22,6 +28,10 @@ const contact = useContactStore();
     </v-btn>
     <v-btn
         class="button bl"
+        :class="{
+            'button-dark': ui.getTheme === 'dark',
+            'button-light': ui.getTheme === 'light'
+        }"
         :exact="true"
         :ripple="false"
         stacked
@@ -30,6 +40,10 @@ const contact = useContactStore();
     </v-btn>
     <v-btn
         class="button br bl"
+        :class="{
+            'button-dark': ui.getTheme === 'dark',
+            'button-light': ui.getTheme === 'light'
+        }"
         :ripple="false"
         stacked
         :to="`/${contact.slug}`">
@@ -43,25 +57,41 @@ const contact = useContactStore();
     <v-btn
         :href="profile.social.github"
         :ripple="false"
-        class="text-grey-lighten-1 social-button"
+        class="social-button"
+        :class="{
+            'text-grey-lighten-1 social-button-dark': ui.getTheme === 'dark',
+            'text-grey-darken-1 social-button-light': ui.getTheme === 'light'
+        }"
         target="_blank"
         icon="mdi-github"/>
     <v-btn
         :href="profile.social.facebook"
         :ripple="false"
-        class="text-grey-lighten-1 social-button"
+        class="social-button"
+        :class="{
+            'text-grey-lighten-1 social-button-dark': ui.getTheme === 'dark',
+            'text-grey-darken-1 social-button-light': ui.getTheme === 'light'
+        }"
         target="_blank"
         icon="mdi-facebook"/>
     <v-btn
         :href="profile.social.twitter"
         :ripple="false"
-        class="text-grey-lighten-1 social-button"
+        class="social-button"
+        :class="{
+            'text-grey-lighten-1 social-button-dark': ui.getTheme === 'dark',
+            'text-grey-darken-1 social-button-light': ui.getTheme === 'light'
+        }"
         target="_blank"
         icon="mdi-twitter"/>
     <v-btn
         :href="profile.social.linkedin"
         :ripple="false"
-        class="text-grey-lighten-1 social-button"
+        class="social-button"
+        :class="{
+            'text-grey-lighten-1 social-button-dark': ui.getTheme === 'dark',
+            'text-grey-darken-1 social-button-light': ui.getTheme === 'light'
+        }"
         target="_blank"
         icon="mdi-linkedin"/>
 </template>
@@ -97,15 +127,23 @@ const contact = useContactStore();
     transition: 0.3s;
 }
 
-.button:hover {
+.button-dark:hover {
     color: #00fa95;
+}
+
+.button-light:hover {
+    color: #00bd6e;
 }
 
 .social-button {
     transition: 0.3s;
 }
 
-.social-button:hover {
+.social-button-dark:hover {
     color: white !important;
+}
+
+.social-button-light:hover {
+    color: #000000 !important;
 }
 </style>

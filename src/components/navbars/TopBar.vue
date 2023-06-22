@@ -5,7 +5,7 @@
             'bg-black': ui.getTheme === 'dark',
             'bg-white': ui.getTheme === 'light'
         }"
-        height="60"
+        height="55"
         flat
     >
         <v-container class="d-flex flex-row align-center">

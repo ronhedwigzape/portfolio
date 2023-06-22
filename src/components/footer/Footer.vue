@@ -1,5 +1,4 @@
 <script setup>
-
 import {useStore} from "@/stores";
 
 const store = useStore()

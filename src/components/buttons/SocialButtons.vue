@@ -2,6 +2,7 @@
 import {useProfileStore} from "@/stores/store-profile";
 import {ref} from "vue";
 import ToggleDarkModeSwitch from "./ToggleDarkModeSwitch.vue";
+import HedwigsButton from "@/components/buttons/HedwigsButton.vue";
 
 const profile = useProfileStore();
 const toggle = ref(null);
@@ -9,6 +10,10 @@ const toggle = ref(null);
 
 <template>
     <div class="d-flex align-center flex-column pa-6">
+        <v-col class="d-flex justify-space-between align-center">
+            <p>Hedwig's Theme</p>
+            <hedwigs-button/>
+        </v-col>
         <div class="d-flex justify-space-between align-center" style="gap: 2rem;">
             <p>Appearance</p>
             <toggle-dark-mode-switch/>

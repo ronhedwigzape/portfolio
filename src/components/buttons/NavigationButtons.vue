@@ -5,6 +5,7 @@ import {useHomeStore} from "@/stores/store-home";
 import {useProjectStore} from "@/stores/store-projects";
 import {useContactStore} from "@/stores/store-contact";
 import {useUiStore} from "@/stores/store-ui";
+import HedwigsButton from "@/components/buttons/HedwigsButton.vue";
 
 const profile = useProfileStore();
 const home = useHomeStore();
@@ -14,6 +15,7 @@ const ui = useUiStore();
 </script>
 
 <template>
+    <hedwigs-button/>
     <v-btn
         class="button bl"
         :class="{

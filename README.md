@@ -1,6 +1,6 @@
 # portfolio
 
-My simple portfolio (Soon going for Harry Potter themed portfolio ~ See [`dev-hp-astro`](https://github.com/ronhedwigzape/portfolio/tree/dev-hp-astro)) 
+My simple portfolio (Soon going for Harry Potter themed portfolio ~ See [`dev-hp-vue3`](https://github.com/ronhedwigzape/portfolio/tree/dev-hp-vue3)) 
 
 ## Recommended IDE Setup
 

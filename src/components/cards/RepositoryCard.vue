@@ -10,7 +10,7 @@ profile.fetchRepositories();
 <template>
     <v-row class="d-flex justify-center align-center">
         <v-col cols="12" sm="6" md="6" lg="6" v-for="repo in profile.repositories" :key="repo.id">
-            <v-card class="card pa-7">
+            <v-card class="card pa-7 d-flex align-center">
                 <v-row class="content d-flex flex-column">
                     <v-col>
                         <div class="heading">
@@ -22,9 +22,9 @@ profile.fetchRepositories();
                                 {{ repo.visibility }}
                             </v-chip>
                         </div>
-                        <p class="pt-4">{{ repo.description }}</p>
+                        <p class="pt-6">{{ repo.description }}</p>
                     </v-col>
-                    <v-row class="mx-auto py-5">
+                    <v-row class="mx-auto py-6">
                         <v-col class="px-0" style="width: 120px;">
                             <span class="text-subtitle-2">
                                 <v-icon
@@ -50,12 +50,12 @@ profile.fetchRepositories();
                         <v-btn
                             :href="repo.url"
                             target="_blank"
-                            variant="tonal"
+                            variant="outlined"
                             append-icon="mdi-open-in-new"
                         >
                             View on Github
                         </v-btn>
-                        <v-btn color="primary">
+                        <v-btn color="green-accent-3">
                             View Project
                             <v-dialog
                                 v-model="projectDialog[repo.id]"
@@ -103,6 +103,7 @@ profile.fetchRepositories();
 .card:hover {
     box-shadow: 0 0 20px rgba(9, 241, 40, 0.8);
     border-color: rgb(0, 250, 149);
+    background-color: #171717 !important;
 }
 
 </style>

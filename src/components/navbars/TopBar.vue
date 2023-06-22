@@ -1,6 +1,5 @@
 <template>
     <v-app-bar
-        scroll-behavior="hide"
         class="bg-black border-b"
         height="60"
         flat

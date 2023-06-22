@@ -15,7 +15,7 @@ export const useProfileStore = defineStore('profile', {
             linkedin: 'https://www.linkedin.com/in/ron-hedwig-zape-b49062269/'
         },
         // GitHub Personal Token
-        github_personal_token:  import.meta.env.VITE_GITHUB_PERSONAL_TOKEN,
+        github_personal_token: import.meta.env.VITE_GITHUB_PERSONAL_TOKEN,
         repositories: []
     }),
 

@@ -7,19 +7,19 @@
         <v-list density="compact" nav>
             <v-list-item
                 :to="`/${home.slug}`"
-                prepend-icon="mdi-view-dashboard"
+                prepend-icon="mdi-home"
                 :title="home.component"
                 :value="`${home.slug}`"
             />
             <v-list-item
                 :to="`/${project.slug}`"
-                prepend-icon="mdi-briefcase"
+                prepend-icon="mdi-magic-staff"
                 :title="project.component"
                 :value="`${project.slug}`"
             />
             <v-list-item
                 :to="`/${contact.slug}`"
-                prepend-icon="mdi-account"
+                prepend-icon="mdi-email-fast"
                 :title="contact.component"
                 :value="`${contact.slug}`"
             />

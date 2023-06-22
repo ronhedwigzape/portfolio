@@ -56,6 +56,7 @@ profile.fetchRepositories();
                                     'text-subtitle-2': $vuetify.display.lgAndUp
                                 }">
                                 <v-icon
+                                    class="pb-1"
                                     :color="
                                     repo.language === 'Vue' ? 'green-accent-3' :
                                     repo.language === 'PHP' ? 'indigo-darken-2' :
@@ -70,7 +71,7 @@ profile.fetchRepositories();
                                     'text-caption': $vuetify.display.mdAndDown,
                                     'text-subtitle-2': $vuetify.display.lgAndUp
                                 }"
-                            ><v-icon>mdi-star</v-icon> Stars: {{ repo.stars }}</span>
+                            ><v-icon class="pb-1">mdi-star</v-icon> Stars: {{ repo.stars }}</span>
                         </v-col>
                         <v-col class="px-0" style="width: 120px;">
                             <span
@@ -78,14 +79,14 @@ profile.fetchRepositories();
                                     'text-caption': $vuetify.display.mdAndDown,
                                     'text-subtitle-2': $vuetify.display.lgAndUp
                                 }"
-                            ><v-icon>mdi-source-fork</v-icon> Forks: {{ repo.forks }}</span>
+                            ><v-icon class="pb-1">mdi-source-fork</v-icon> Forks: {{ repo.forks }}</span>
                         </v-col>
                         <v-col class="px-0" style="width: 120px;">
                             <span
                                 :class="{
                                     'text-caption': $vuetify.display.mdAndDown,
                                     'text-subtitle-2': $vuetify.display.lgAndUp
-                                }"><v-icon>mdi-eye</v-icon> Watchers: {{ repo.watchers }}</span>
+                                }"><v-icon class="pb-1">mdi-eye</v-icon> Watchers: {{ repo.watchers }}</span>
                         </v-col>
                     </v-row>
                     <v-col

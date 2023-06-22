@@ -34,8 +34,6 @@ export const useProfileStore = defineStore('profile', {
                 }
             });
 
-            console.log(response)
-
             // See rate limit
             // const rateLimitResponse = await axios.get("https://api.github.com/rate_limit", {
             //     headers: {
@@ -52,6 +50,7 @@ export const useProfileStore = defineStore('profile', {
             const filteredRepos = response.data.filter(repo => repoNames.includes(repo.name));
 
             this.repositories = filteredRepos.map(repo => ({
+                id: repo.id,
                 name: repo.name,
                 full_name: repo.full_name,
                 description: repo.description,
@@ -60,7 +59,8 @@ export const useProfileStore = defineStore('profile', {
                 language: repo.language,
                 license: repo.license?.name || '',
                 visibility: repo.visibility,
-                url: repo.html_url
+                url: repo.html_url,
+                watchers: repo.watchers_count
             }));
         }
     },

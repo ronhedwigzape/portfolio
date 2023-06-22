@@ -21,6 +21,7 @@
 
 - Open your terminal or command prompt.
 - Type the following command and press Enter:
+  
    ```shell
    git branch -D gh-pages
    ```
@@ -30,6 +31,7 @@
 - Make sure you are in the **root** directory of your project.
 - Open your terminal or command prompt.
 - Type the following command and press Enter:
+
    ```shell   
    npm run build
    ```
@@ -38,6 +40,7 @@
 
 - Open your terminal or command prompt.
 - Type the following command to force push **`/public`** and press Enter to commit:
+
    ```shell
    git add public -f
    git commit -m "Deploy Portfolio to GitHub Pages"
@@ -46,6 +49,7 @@
 
 - Open your terminal or command prompt.
 - Type the following command and press Enter:
+
    ```shell
    git subtree push --prefix public origin gh-pages
    ```

@@ -5,7 +5,7 @@ const toggle = () => {
 </script>
 
 <template>
-    <audio id="backgroundAudio" autoplay loop crossOrigin="anonymous">
+    <audio id="backgroundAudio" loop crossOrigin="anonymous">
         <source src="/music/HedwigsTheme.mp3" type="audio/mp3">
     </audio>
     <v-btn

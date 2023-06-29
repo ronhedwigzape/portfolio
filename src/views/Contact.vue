@@ -1,8 +1,10 @@
 <script setup>
 import HogwartsContactParallax from "../components/parallax/HogwartsContactParallax.vue";
 import {useContactStore} from "@/stores/store-contact";
+import {useUiStore} from "@/stores/store-ui";
 
 const contact = useContactStore();
+const ui = useUiStore();
 </script>
 
 <template>
@@ -15,7 +17,12 @@ const contact = useContactStore();
                         {{ contact.content.title }}
                     </h2>
                     <p class="my-5 text-body-1 text-sm-h6 text-md-h6 text-lg-h6"
-                       v-for="description in contact.content.description">
+                       v-for="description in contact.content.description"
+                       :class="{
+                            'text-grey-lighten-1': ui.getTheme === 'dark',
+                            'text-grey-darken-1': ui.getTheme === 'light'
+                       }"
+                    >
                         {{ description }}
                     </p>
                 </v-col>

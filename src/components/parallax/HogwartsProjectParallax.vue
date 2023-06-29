@@ -1,7 +1,9 @@
 <script setup>
 import {useProjectStore} from "@/stores/store-projects";
+import {useUiStore} from "@/stores/store-ui";
 
 const project = useProjectStore();
+const ui = useUiStore();
 </script>
 
 <template>
@@ -14,7 +16,12 @@ const project = useProjectStore();
             <h1 class="text-h3 text-sm-h2 mb-4 text-md-h1 text-shadow potter text-center">
                 {{ project.header.title }}
             </h1>
-            <p class="text-shadow text-subtitle-2 text-sm-subtitle-1 text-md-h5 my-3 my-sm-0 text-center">
+            <p class="text-shadow text-subtitle-2 text-sm-subtitle-1 text-md-h5 my-3 my-sm-0 text-center"
+               :class="{
+                    'text-grey-lighten-3': ui.getTheme === 'dark',
+                    'text-grey-lighten-2': ui.getTheme === 'light'
+               }"
+            >
                 {{ project.header.subtitle }}
             </p>
         </v-container>

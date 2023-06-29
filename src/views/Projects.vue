@@ -2,8 +2,10 @@
 import HogwartsProjectParallax from "../components/parallax/HogwartsProjectParallax.vue";
 import {useProjectStore} from "@/stores/store-projects";
 import RepositoryCard from "../components/cards/RepositoryCard.vue";
+import {useUiStore} from "@/stores/store-ui";
 
 const project = useProjectStore();
+const ui = useUiStore();
 </script>
 
 <template>
@@ -14,7 +16,12 @@ const project = useProjectStore();
                 {{ project.content.title }}
             </h2>
             <p class="my-5 text-body-1 text-sm-h6 text-md-h6 text-lg-h6"
-               v-for="description in project.content.description">
+               v-for="description in project.content.description"
+               :class="{
+                    'text-grey-lighten-1': ui.getTheme === 'dark',
+                    'text-grey-darken-1': ui.getTheme === 'light'
+               }"
+            >
                 {{ description }}
             </p>
             <repository-card/>

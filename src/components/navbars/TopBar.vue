@@ -9,7 +9,15 @@
         flat
     >
         <v-container class="d-flex flex-row align-center">
-            <v-icon class="ms-3">mdi-owl</v-icon>
+            <v-icon
+                class="ms-3"
+                :class="{
+                    'text-grey-lighten-1': ui.getTheme === 'dark',
+                    'text-grey-darken-1': ui.getTheme === 'light'
+                }"
+            >
+                mdi-owl
+            </v-icon>
             <v-app-bar-title class="ms-3">{{ store.app.brand }}</v-app-bar-title>
 
             <navigation-buttons v-if="$vuetify.display.lgAndUp"/>

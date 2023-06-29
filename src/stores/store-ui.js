@@ -6,7 +6,8 @@ export const useUiStore = defineStore('ui',{
     state: () => ({
         sidebar: false,
         darkMode: true,
-        theme: useTheme()
+        theme: useTheme(),
+        topBarHeight: 55
     }),
     getters: {
       getTheme() {

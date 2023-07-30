@@ -60,7 +60,7 @@ npm run dev
 
    ```shell
    git add public -f
-   git commit -m "Deploy Portfolio to GitHub Pages"
+   git commit -m "chore(deployment): deploy to production"
    ```
   
 4. Push the built project to the gh-pages branch:

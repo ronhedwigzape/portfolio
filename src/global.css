@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Potter';
+    src: local('HarryPotter'), url('/fonts/HarryPotter.ttf') format('truetype');
+}
+
+.potter {
+    font-family: Potter, serif !important;
+}
+
+.text-shadow {
+    text-shadow: #000000 3px 3px 5px;
+}
+
+.nuxt-button-lead {
+    border: 3px solid #01dc83;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.nuxt-button-lead:hover {
+    border-color: #00fa95;
+    box-shadow: 0 0 20px rgba(1, 220, 131, 0.8);
+}
+
+.nuxt-dark:hover {
+    background-color: black !important;
+}
+
+.nuxt-button-lead:active {
+    box-shadow: 0 0 10px rgba(1, 220, 131, 0.4);
+}
+
+.nuxt-button-sub {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.nuxt-button-sub:hover {
+    border-color: #00fa95;
+}
+
+.nuxt-button-sub:focus,
+.nuxt-button-sub:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.nuxt-color {
+    color: #00fa95 !important;
+}

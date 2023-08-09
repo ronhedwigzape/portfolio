@@ -44,7 +44,7 @@ export const useProfileStore = defineStore('profile', {
             // console.log(rateLimitResponse.data);
 
             // Add the repository names to display
-            const repoNames = ['seat-n-savor', 'sportsfest-litmusda', 'notes'];
+            const repoNames = ['seat-n-savor', 'sportsfest-litmusda', 'notes', 'vue-voice-gpt'];
 
             // Filter the repositories array base on repoNames
             const filteredRepos = response.data.filter(repo => repoNames.includes(repo.name));

@@ -5,6 +5,7 @@ export const useProfileStore = defineStore('profile', {
     state: () => ({
         component: 'Profile',
         username: 'ronhedwigzape',
+        org: 'aclc-iriga',
         name: 'Ron Hedwig',
         initial: 'A.',
         surname: 'Zape',
@@ -24,11 +25,22 @@ export const useProfileStore = defineStore('profile', {
     },
 
     actions: {
+        async fetchOrgRepositories() {
+            const org = this.org;
+            const token = this.github_personal_token;
+
+            const response = await axios.get(`https://api.github.com/orgs/${org}/repos?per_page=100`, {
+                headers: {
+                    'Authorization': `${token}`
+                }
+            });
+            return response.data;
+        },
         async fetchRepositories() {
             const username = this.username;
             const token = this.github_personal_token;
 
-            const response = await axios.get(`https://api.github.com/users/${username}/repos`, {
+            const response = await axios.get(`https://api.github.com/users/${username}/repos?per_page=100`, {
                 headers: {
                     'Authorization': `${token}`
                 }
@@ -43,11 +55,22 @@ export const useProfileStore = defineStore('profile', {
             //
             // console.log(rateLimitResponse.data);
 
-            // Add the repository names to display
-            const repoNames = ['seat-n-savor', 'sportsfest-litmusda', 'notes', 'vue-voice-gpt'];
+            const orgRepos = await this.fetchOrgRepositories();
+            const allRepos = [...response.data, ...orgRepos];
 
             // Filter the repositories array base on repoNames
-            const filteredRepos = response.data.filter(repo => repoNames.includes(repo.name));
+            const filteredRepos = allRepos.filter(
+                repo =>
+                // Can add repositories here and modify its properties
+                (repo.name === 'sportsfest-litmusda' && repo.forks_count > 0) ||
+                (repo.name === 'vue-voice-gpt') ||
+                (repo.name === 'qotu.sn-iriga') ||
+                (repo.name === 'msduran-nabua') ||
+                (repo.name === 'mk') ||
+                (repo.name === 'laravel-task-list') ||
+                (repo.name === 'laravel-book-review') ||
+                (repo.name === 'laravel-event-management')
+            );
 
             this.repositories = filteredRepos.map(repo => ({
                 id: repo.id,

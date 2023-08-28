@@ -60,6 +60,7 @@ profile.fetchRepositories();
                                     :color="
                                     repo.language === 'Vue' ? 'green-accent-3' :
                                     repo.language === 'PHP' ? 'indigo-darken-2' :
+                                    repo.language === 'JavaScript' ? 'amber' :
                                     ''"
                                 >mdi-circle</v-icon>
                                 {{ repo.language }}
@@ -105,28 +106,28 @@ profile.fetchRepositories();
                                 View on Github
                             </v-btn>
                         </v-col>
-                        <v-col class="d-flex justify-center">
-                            <v-btn color="green-accent-3">
-                                View Project
-                                <v-dialog
-                                    v-model="projectDialog[repo.id]"
-                                    activator="parent"
-                                    width="auto"
-                                >
-                                    <v-card>
-                                        <v-card-text>
-                                            {{ repo.name }}
-                                        </v-card-text>
-                                        <v-card-actions>
-                                            <v-btn
-                                                color="primary"
-                                                block @click="projectDialog[repo.id] = false"
-                                            >Close Dialog</v-btn>
-                                        </v-card-actions>
-                                    </v-card>
-                                </v-dialog>
-                            </v-btn>
-                        </v-col>
+<!--                        <v-col class="d-flex justify-center">-->
+<!--                            <v-btn color="green-accent-3">-->
+<!--                                View Project-->
+<!--                                <v-dialog-->
+<!--                                    v-model="projectDialog[repo.id]"-->
+<!--                                    activator="parent"-->
+<!--                                    width="auto"-->
+<!--                                >-->
+<!--                                    <v-card>-->
+<!--                                        <v-card-text>-->
+<!--                                            {{ repo.name }}-->
+<!--                                        </v-card-text>-->
+<!--                                        <v-card-actions>-->
+<!--                                            <v-btn-->
+<!--                                                color="primary"-->
+<!--                                                block @click="projectDialog[repo.id] = false"-->
+<!--                                            >Close Dialog</v-btn>-->
+<!--                                        </v-card-actions>-->
+<!--                                    </v-card>-->
+<!--                                </v-dialog>-->
+<!--                            </v-btn>-->
+<!--                        </v-col>-->
                     </v-col>
                 </v-row>
             </v-card>

@@ -2,6 +2,7 @@
 import HogwartsContactParallax from "../components/parallax/HogwartsContactParallax.vue";
 import {useContactStore} from "@/stores/store-contact";
 import {useUiStore} from "@/stores/store-ui";
+import OwlCard from "@/components/cards/OwlCard.vue";
 
 const contact = useContactStore();
 const ui = useUiStore();
@@ -27,47 +28,7 @@ const ui = useUiStore();
                     </p>
                 </v-col>
                 <v-col cols="12" sm="6" md="6" lg="6">
-                    <v-card class="mt-lg-3" variant="tonal">
-                        <v-card-title class="my-3 my-md-6 my-lg-6 text-h5 text-sm-h5 text-md-h4 text-lg-h4 px-6">
-                            {{ contact.content.card_title }}
-                            <v-icon>mdi-owl</v-icon>
-                        </v-card-title>
-                        <v-card-text align="center" class="px-6">
-                            <v-row>
-                                <v-col cols="12" sm="6" md="6" lg="6">
-                                    <v-text-field
-                                        variant="underlined"
-                                        label="First Name"
-                                        hide-details="auto"
-                                    ></v-text-field>
-                                </v-col>
-                                <v-col cols="12" sm="6" md="6" lg="6">
-                                    <v-text-field
-                                        variant="underlined"
-                                        label="Last Name"
-                                        hide-details="auto"
-                                    ></v-text-field>
-                                </v-col>
-                                <v-col cols="12">
-                                    <v-text-field
-                                        variant="underlined"
-                                        label="Email"
-                                        hide-details="auto"
-                                    ></v-text-field>
-                                </v-col>
-                                <v-col cols="12">
-                                    <v-textarea
-                                        variant="underlined"
-                                        label="Message"
-                                    />
-                                </v-col>
-                            </v-row>
-                        </v-card-text>
-                        <v-card-actions class="px-6 pb-4">
-                            <v-btn class="nuxt-button-sub" block>Submit</v-btn>
-                        </v-card-actions>
-                    </v-card>
-
+                    <OwlCard :contact="contact" />
                 </v-col>
             </v-row>
         </v-container>

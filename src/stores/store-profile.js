@@ -17,11 +17,14 @@ export const useProfileStore = defineStore('profile', {
         },
         // GitHub Personal Token
         github_personal_token: import.meta.env.VITE_GITHUB_PERSONAL_TOKEN,
-        repositories: []
+        repositories: [],
+        message: 'Fetching Crafts...'
     }),
 
     getters: {
-
+        getMessage(state) {
+            return state.message;
+        }
     },
 
     actions: {
@@ -39,12 +42,21 @@ export const useProfileStore = defineStore('profile', {
         async fetchRepositories() {
             const username = this.username;
             const token = this.github_personal_token;
+            let response;
 
-            const response = await axios.get(`https://api.github.com/users/${username}/repos?per_page=100`, {
-                headers: {
-                    'Authorization': `${token}`
-                }
-            });
+            try {
+                response = await axios.get(`https://api.github.com/users/${username}/repos?per_page=100`, {
+                    headers: {
+                        'Authorization': `${token}`
+                    }
+                });
+                this.message = 'Crafts fetched successfully!'
+                setTimeout(() => {
+                    this.message = null;
+                }, 1000);
+            } catch (error) {
+                this.message = 'Error fetching crafts!'
+            }
 
             // See rate limit
             // const rateLimitResponse = await axios.get("https://api.github.com/rate_limit", {
@@ -61,15 +73,15 @@ export const useProfileStore = defineStore('profile', {
             // Filter the repositories array base on repoNames
             const filteredRepos = allRepos.filter(
                 repo =>
-                // Can add repositories here and modify its properties
-                (repo.name === 'sportsfest-litmusda' && repo.forks_count > 0) ||
-                (repo.name === 'vue-voice-gpt') ||
-                (repo.name === 'qotu.sn-iriga') ||
-                (repo.name === 'msduran-nabua') ||
-                (repo.name === 'mk') ||
-                (repo.name === 'laravel-task-list') ||
-                (repo.name === 'laravel-book-review') ||
-                (repo.name === 'laravel-event-management')
+                    // Can add repositories here and modify its properties
+                    (repo.name === 'sportsfest-litmusda' && repo.forks_count > 0) ||
+                    (repo.name === 'vue-voice-gpt') ||
+                    (repo.name === 'qotu.sn-iriga') ||
+                    (repo.name === 'msduran-nabua') ||
+                    (repo.name === 'mk') ||
+                    (repo.name === 'laravel-task-list') ||
+                    (repo.name === 'laravel-book-review') ||
+                    (repo.name === 'laravel-event-management')
             );
 
             this.repositories = filteredRepos.map(repo => ({
